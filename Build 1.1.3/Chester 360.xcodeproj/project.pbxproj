@@ -1,0 +1,1099 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A210245516DB9779008D2D9F /* WelcomeToChesterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A210245416DB9779008D2D9F /* WelcomeToChesterViewController.m */; };
+		A210245816DBBB3A008D2D9F /* See&DoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A210245716DBBB3A008D2D9F /* See&DoViewController.m */; };
+		A210245E16DBC4E2008D2D9F /* SeeAndDoAttractionPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A210245D16DBC4E2008D2D9F /* SeeAndDoAttractionPageViewController.m */; };
+		A24B1A4A16EA48C900B4E417 /* Shopping.png in Resources */ = {isa = PBXBuildFile; fileRef = A24B1A4816EA48C900B4E417 /* Shopping.png */; };
+		A24B1A4B16EA48C900B4E417 /* Shopping@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A24B1A4916EA48C900B4E417 /* Shopping@2x.png */; };
+		A26CA05616EFA5E300EEFE4D /* PanoFeatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A26CA05516EFA5E300EEFE4D /* PanoFeatureViewController.m */; };
+		A283511216CE8D4100B61840 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A283511116CE8D4100B61840 /* UIKit.framework */; };
+		A283511416CE8D4100B61840 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A283511316CE8D4100B61840 /* Foundation.framework */; };
+		A283511616CE8D4100B61840 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A283511516CE8D4100B61840 /* CoreGraphics.framework */; };
+		A283511C16CE8D4100B61840 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A283511A16CE8D4100B61840 /* InfoPlist.strings */; };
+		A283511E16CE8D4100B61840 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A283511D16CE8D4100B61840 /* main.m */; };
+		A283512216CE8D4100B61840 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A283512116CE8D4100B61840 /* AppDelegate.m */; };
+		A283512B16CE8D4100B61840 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A283512916CE8D4100B61840 /* MainStoryboard.storyboard */; };
+		A283514416CE93F000B61840 /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = A283514316CE93F000B61840 /* TabBarController.m */; };
+		A283515D16D2BE4A00B61840 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A283515C16D2BE4A00B61840 /* CoreLocation.framework */; };
+		A283516016D2BEF000B61840 /* MapTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A283515F16D2BEF000B61840 /* MapTabViewController.m */; };
+		A283516216D2C03600B61840 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A283516116D2C03600B61840 /* MapKit.framework */; };
+		A283518B16D2EEA800B61840 /* Guide.png in Resources */ = {isa = PBXBuildFile; fileRef = A283518316D2EEA800B61840 /* Guide.png */; };
+		A283518C16D2EEA800B61840 /* Guide@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A283518416D2EEA800B61840 /* Guide@2x.png */; };
+		A283518D16D2EEA800B61840 /* Info.png in Resources */ = {isa = PBXBuildFile; fileRef = A283518516D2EEA800B61840 /* Info.png */; };
+		A283518E16D2EEA800B61840 /* Info@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A283518616D2EEA800B61840 /* Info@2x.png */; };
+		A283518F16D2EEA800B61840 /* Map.png in Resources */ = {isa = PBXBuildFile; fileRef = A283518716D2EEA800B61840 /* Map.png */; };
+		A283519016D2EEA800B61840 /* Map@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A283518816D2EEA800B61840 /* Map@2x.png */; };
+		A283519216D2EEA800B61840 /* Website@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A283518A16D2EEA800B61840 /* Website@2x.png */; };
+		A283519416D2F06700B61840 /* Website.png in Resources */ = {isa = PBXBuildFile; fileRef = A283519316D2F06700B61840 /* Website.png */; };
+		A283519716D2F33000B61840 /* WebsiteTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A283519616D2F33000B61840 /* WebsiteTabViewController.m */; };
+		A283519A16D8221100B61840 /* Chester360NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A283519916D8221100B61840 /* Chester360NavigationController.m */; };
+		A28351A016D827D500B61840 /* GuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A283519F16D827D500B61840 /* GuideViewController.m */; };
+		A28639DB16DCE32E0074354B /* myData.plist in Resources */ = {isa = PBXBuildFile; fileRef = A28639DA16DCE32E0074354B /* myData.plist */; };
+		A28639DE16DD13A20074354B /* PanoramaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A28639DD16DD13A20074354B /* PanoramaViewController.m */; };
+		A28639E216DD14B30074354B /* JAPanoView.m in Sources */ = {isa = PBXBuildFile; fileRef = A28639E116DD14B30074354B /* JAPanoView.m */; };
+		A28639E516DD17AA0074354B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A28639E416DD17AA0074354B /* QuartzCore.framework */; };
+		A28639F416DE112D0074354B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A28639F316DE112D0074354B /* AVFoundation.framework */; };
+		A2863A0216DF769D0074354B /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2863A0116DF769D0074354B /* CoreMotion.framework */; };
+		A2863A0A16E00DBF0074354B /* Welcome.png in Resources */ = {isa = PBXBuildFile; fileRef = A2863A0816E00DBF0074354B /* Welcome.png */; };
+		A2863A0B16E00DBF0074354B /* Welcome@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A2863A0916E00DBF0074354B /* Welcome@2x.png */; };
+		A2863A1216E01D0B0074354B /* Town Hall.png in Resources */ = {isa = PBXBuildFile; fileRef = A2863A1016E01D0B0074354B /* Town Hall.png */; };
+		A2863A1316E01D0B0074354B /* Town Hall@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A2863A1116E01D0B0074354B /* Town Hall@2x.png */; };
+		A2863A1816E01FED0074354B /* Cathedral.png in Resources */ = {isa = PBXBuildFile; fileRef = A2863A1416E01FED0074354B /* Cathedral.png */; };
+		A2863A1916E01FED0074354B /* Cathedral@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A2863A1516E01FED0074354B /* Cathedral@2x.png */; };
+		A2863A3716E0BA730074354B /* Amphitheatre.back.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2863A2316E0BA730074354B /* Amphitheatre.back.jpg */; };
+		A2863A3816E0BA730074354B /* Amphitheatre.bottom.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2863A2416E0BA730074354B /* Amphitheatre.bottom.jpg */; };
+		A2863A3916E0BA730074354B /* Amphitheatre.front.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2863A2516E0BA730074354B /* Amphitheatre.front.jpg */; };
+		A2863A3A16E0BA730074354B /* Amphitheatre.left.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2863A2616E0BA730074354B /* Amphitheatre.left.jpg */; };
+		A2863A3B16E0BA730074354B /* Amphitheatre.right.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2863A2716E0BA730074354B /* Amphitheatre.right.jpg */; };
+		A2863A3C16E0BA730074354B /* Amphitheatre.top.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2863A2816E0BA730074354B /* Amphitheatre.top.jpg */; };
+		A2863A3D16E0BA730074354B /* Cathedral.back.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2863A2A16E0BA730074354B /* Cathedral.back.jpg */; };
+		A2863A3E16E0BA730074354B /* Cathedral.bottom.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2863A2B16E0BA730074354B /* Cathedral.bottom.jpg */; };
+		A2863A3F16E0BA730074354B /* Cathedral.front.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2863A2C16E0BA730074354B /* Cathedral.front.jpg */; };
+		A2863A4016E0BA730074354B /* Cathedral.left.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2863A2D16E0BA730074354B /* Cathedral.left.jpg */; };
+		A2863A4116E0BA730074354B /* Cathedral.right.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2863A2E16E0BA730074354B /* Cathedral.right.jpg */; };
+		A2863A4216E0BA730074354B /* Cathedral.top.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2863A2F16E0BA730074354B /* Cathedral.top.jpg */; };
+		A2863A4316E0BA730074354B /* Town Hall.back.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2863A3116E0BA730074354B /* Town Hall.back.jpg */; };
+		A2863A4416E0BA730074354B /* Town Hall.bottom.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2863A3216E0BA730074354B /* Town Hall.bottom.jpg */; };
+		A2863A4516E0BA730074354B /* Town Hall.front.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2863A3316E0BA730074354B /* Town Hall.front.jpg */; };
+		A2863A4616E0BA730074354B /* Town Hall.left.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2863A3416E0BA730074354B /* Town Hall.left.jpg */; };
+		A2863A4716E0BA730074354B /* Town Hall.right.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2863A3516E0BA730074354B /* Town Hall.right.jpg */; };
+		A2863A4816E0BA730074354B /* Town Hall.top.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2863A3616E0BA730074354B /* Town Hall.top.jpg */; };
+		A2863A4E16E0C0DA0074354B /* Clock Tower.png in Resources */ = {isa = PBXBuildFile; fileRef = A2863A4A16E0C0D90074354B /* Clock Tower.png */; };
+		A2863A4F16E0C0DA0074354B /* Clock Tower@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A2863A4B16E0C0D90074354B /* Clock Tower@2x.png */; };
+		A2863A5016E0C0DA0074354B /* Roman Amphitheatre.png in Resources */ = {isa = PBXBuildFile; fileRef = A2863A4C16E0C0D90074354B /* Roman Amphitheatre.png */; };
+		A2863A5116E0C0DA0074354B /* Roman Amphitheatre@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A2863A4D16E0C0DA0074354B /* Roman Amphitheatre@2x.png */; };
+		A2863A5316E0DAFE0074354B /* CameraIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = A2863A5216E0DAFE0074354B /* CameraIcon.png */; };
+		A2863A5616E745530074354B /* Welcome2.png in Resources */ = {isa = PBXBuildFile; fileRef = A2863A5416E745530074354B /* Welcome2.png */; };
+		A2863A5716E745530074354B /* Welcome2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A2863A5516E745530074354B /* Welcome2@2x.png */; };
+		A2863A5F16E747030074354B /* Clock Tower.back.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2863A5916E747030074354B /* Clock Tower.back.jpg */; };
+		A2863A6016E747030074354B /* Clock Tower.bottom.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2863A5A16E747030074354B /* Clock Tower.bottom.jpg */; };
+		A2863A6116E747030074354B /* Clock Tower.front.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2863A5B16E747030074354B /* Clock Tower.front.jpg */; };
+		A2863A6216E747030074354B /* Clock Tower.left.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2863A5C16E747030074354B /* Clock Tower.left.jpg */; };
+		A2863A6316E747030074354B /* Clock Tower.right.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2863A5D16E747030074354B /* Clock Tower.right.jpg */; };
+		A2863A6416E747030074354B /* Clock Tower.top.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2863A5E16E747030074354B /* Clock Tower.top.jpg */; };
+		A2863A6816E749D70074354B /* ChesterStreet.m4a in Resources */ = {isa = PBXBuildFile; fileRef = A2863A6716E749D70074354B /* ChesterStreet.m4a */; };
+		A2863A7516E76F930074354B /* Nightlife.png in Resources */ = {isa = PBXBuildFile; fileRef = A2863A6916E76F910074354B /* Nightlife.png */; };
+		A2863A7616E76F930074354B /* Nightlife@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A2863A6A16E76F910074354B /* Nightlife@2x.png */; };
+		A2863A7716E76F930074354B /* Restaurants.png in Resources */ = {isa = PBXBuildFile; fileRef = A2863A6B16E76F920074354B /* Restaurants.png */; };
+		A2863A7816E76F930074354B /* Restaurants@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A2863A6C16E76F920074354B /* Restaurants@2x.png */; };
+		A2863A7916E76F930074354B /* See & Do.png in Resources */ = {isa = PBXBuildFile; fileRef = A2863A6D16E76F920074354B /* See & Do.png */; };
+		A2863A7A16E76F930074354B /* See & Do@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A2863A6E16E76F920074354B /* See & Do@2x.png */; };
+		A2863A7D16E76F930074354B /* University.png in Resources */ = {isa = PBXBuildFile; fileRef = A2863A7116E76F930074354B /* University.png */; };
+		A2863A7E16E76F930074354B /* University@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A2863A7216E76F930074354B /* University@2x.png */; };
+		A2863A7F16E76F930074354B /* Welcome to Chester.png in Resources */ = {isa = PBXBuildFile; fileRef = A2863A7316E76F930074354B /* Welcome to Chester.png */; };
+		A2863A8016E76F930074354B /* Welcome to Chester@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A2863A7416E76F930074354B /* Welcome to Chester@2x.png */; };
+		A2863A9416E7806D0074354B /* Chester360Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A2863A9216E77E410074354B /* Chester360Icon.png */; };
+		A2863A9616E780720074354B /* Chester360Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A2863A9516E780720074354B /* Chester360Icon@2x.png */; };
+		A2863A9816E780880074354B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = A2863A9716E780880074354B /* Default.png */; };
+		A2863A9A16E780A60074354B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A2863A9916E780A60074354B /* Default@2x.png */; };
+		A2863A9C16E780B00074354B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A2863A9B16E780AF0074354B /* Default-568h@2x.png */; };
+		A298FDE416F14AB7006FD210 /* Chester University.png in Resources */ = {isa = PBXBuildFile; fileRef = A298FDE216F14AB7006FD210 /* Chester University.png */; };
+		A298FDE516F14AB7006FD210 /* Chester University@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A298FDE316F14AB7006FD210 /* Chester University@2x.png */; };
+		A298FDEC16F14D64006FD210 /* Binks Building.png in Resources */ = {isa = PBXBuildFile; fileRef = A298FDEA16F14D64006FD210 /* Binks Building.png */; };
+		A298FDED16F14D64006FD210 /* Binks Building@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A298FDEB16F14D64006FD210 /* Binks Building@2x.png */; };
+		A2A94C041757DDBA006C29DE /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A94C031757DDBA006C29DE /* iAd.framework */; };
+		A2A94C071757E7FD006C29DE /* HowToUseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A94C061757E7FD006C29DE /* HowToUseViewController.m */; };
+		A2AAA855173ACFBF003E6E16 /* RaceCourse.back.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2AAA84E173ACFBF003E6E16 /* RaceCourse.back.jpg */; };
+		A2AAA856173ACFBF003E6E16 /* RaceCourse.bottom.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2AAA84F173ACFBF003E6E16 /* RaceCourse.bottom.jpg */; };
+		A2AAA857173ACFBF003E6E16 /* RaceCourse.front.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2AAA850173ACFBF003E6E16 /* RaceCourse.front.jpg */; };
+		A2AAA859173ACFBF003E6E16 /* RaceCourse.left.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2AAA852173ACFBF003E6E16 /* RaceCourse.left.jpg */; };
+		A2AAA85A173ACFBF003E6E16 /* RaceCourse.right.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2AAA853173ACFBF003E6E16 /* RaceCourse.right.jpg */; };
+		A2AAA85B173ACFBF003E6E16 /* RaceCourse.top.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2AAA854173ACFBF003E6E16 /* RaceCourse.top.jpg */; };
+		A2AAA863173AD167003E6E16 /* Cross.back.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2AAA85D173AD167003E6E16 /* Cross.back.jpg */; };
+		A2AAA864173AD167003E6E16 /* Cross.bottom.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2AAA85E173AD167003E6E16 /* Cross.bottom.jpg */; };
+		A2AAA865173AD167003E6E16 /* Cross.front.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2AAA85F173AD167003E6E16 /* Cross.front.jpg */; };
+		A2AAA867173AD167003E6E16 /* Cross.right.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2AAA861173AD167003E6E16 /* Cross.right.jpg */; };
+		A2AAA868173AD167003E6E16 /* Cross.top.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2AAA862173AD167003E6E16 /* Cross.top.jpg */; };
+		A2AAA86A173AD22C003E6E16 /* Cross.left.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2AAA869173AD22C003E6E16 /* Cross.left.jpg */; };
+		A2AAA873173AD2B3003E6E16 /* RiversideBridge.back.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2AAA86C173AD2B3003E6E16 /* RiversideBridge.back.jpg */; };
+		A2AAA874173AD2B3003E6E16 /* RiversideBridge.bottom.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2AAA86D173AD2B3003E6E16 /* RiversideBridge.bottom.jpg */; };
+		A2AAA875173AD2B3003E6E16 /* RiversideBridge.front.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2AAA86E173AD2B3003E6E16 /* RiversideBridge.front.jpg */; };
+		A2AAA876173AD2B3003E6E16 /* RiversideBridge.left.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2AAA86F173AD2B3003E6E16 /* RiversideBridge.left.jpg */; };
+		A2AAA877173AD2B3003E6E16 /* RiversideBridge.right.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2AAA870173AD2B3003E6E16 /* RiversideBridge.right.jpg */; };
+		A2AAA878173AD2B3003E6E16 /* RiversideBridge.top.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2AAA871173AD2B3003E6E16 /* RiversideBridge.top.jpg */; };
+		A2C0FC9C16F13A5F00BB9C37 /* Grosvenor Hotel.png in Resources */ = {isa = PBXBuildFile; fileRef = A2C0FC9A16F13A5F00BB9C37 /* Grosvenor Hotel.png */; };
+		A2C0FC9D16F13A5F00BB9C37 /* Grosvenor Hotel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A2C0FC9B16F13A5F00BB9C37 /* Grosvenor Hotel@2x.png */; };
+		A2C0FCA116F13A8500BB9C37 /* Tethering Stone.png in Resources */ = {isa = PBXBuildFile; fileRef = A2C0FC9F16F13A8500BB9C37 /* Tethering Stone.png */; };
+		A2C0FCA216F13A8500BB9C37 /* Tethering Stone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A2C0FCA016F13A8500BB9C37 /* Tethering Stone@2x.png */; };
+		A2C0FCA616F13AAD00BB9C37 /* Memorial Cross.png in Resources */ = {isa = PBXBuildFile; fileRef = A2C0FCA416F13AAD00BB9C37 /* Memorial Cross.png */; };
+		A2C0FCA716F13AAD00BB9C37 /* Memorial Cross@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A2C0FCA516F13AAD00BB9C37 /* Memorial Cross@2x.png */; };
+		A2C0FCAB16F13ADF00BB9C37 /* A Cellebration of Chester.png in Resources */ = {isa = PBXBuildFile; fileRef = A2C0FCA916F13ADF00BB9C37 /* A Cellebration of Chester.png */; };
+		A2C0FCAC16F13ADF00BB9C37 /* A Cellebration of Chester@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A2C0FCAA16F13ADF00BB9C37 /* A Cellebration of Chester@2x.png */; };
+		A2C0FCB416F1443500BB9C37 /* University.back.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2C0FCAE16F1443500BB9C37 /* University.back.jpg */; };
+		A2C0FCB516F1443500BB9C37 /* University.bottom.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2C0FCAF16F1443500BB9C37 /* University.bottom.jpg */; };
+		A2C0FCB616F1443500BB9C37 /* University.front.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2C0FCB016F1443500BB9C37 /* University.front.jpg */; };
+		A2C0FCB716F1443500BB9C37 /* University.left.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2C0FCB116F1443500BB9C37 /* University.left.jpg */; };
+		A2C0FCB816F1443500BB9C37 /* University.right.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2C0FCB216F1443500BB9C37 /* University.right.jpg */; };
+		A2C0FCB916F1443500BB9C37 /* University.top.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A2C0FCB316F1443500BB9C37 /* University.top.jpg */; };
+		A2CE910116E78F8400F7F0F9 /* ShoppingPage.png in Resources */ = {isa = PBXBuildFile; fileRef = A2CE90FF16E78F8400F7F0F9 /* ShoppingPage.png */; };
+		A2CE910216E78F8400F7F0F9 /* ShoppingPage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A2CE910016E78F8400F7F0F9 /* ShoppingPage@2x.png */; };
+		A2D1325119B3BC440097527D /* Ios7Background.png in Resources */ = {isa = PBXBuildFile; fileRef = A2D1325019B3BC440097527D /* Ios7Background.png */; };
+		A2D42564174E4C7A00F39B16 /* Riverside Bridge.png in Resources */ = {isa = PBXBuildFile; fileRef = A2D42562174E4C7A00F39B16 /* Riverside Bridge.png */; };
+		A2D42565174E4C7A00F39B16 /* Riverside Bridge@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A2D42563174E4C7A00F39B16 /* Riverside Bridge@2x.png */; };
+		A2D4256C174E4C8E00F39B16 /* Chester Racecourse.png in Resources */ = {isa = PBXBuildFile; fileRef = A2D4256A174E4C8E00F39B16 /* Chester Racecourse.png */; };
+		A2D4256D174E4C8E00F39B16 /* Chester Racecourse@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A2D4256B174E4C8E00F39B16 /* Chester Racecourse@2x.png */; };
+		A2D42570174E4D3900F39B16 /* Crossroads.png in Resources */ = {isa = PBXBuildFile; fileRef = A2D4256E174E4D3900F39B16 /* Crossroads.png */; };
+		A2D42571174E4D3900F39B16 /* Crossroads@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A2D4256F174E4D3900F39B16 /* Crossroads@2x.png */; };
+		A2D42574174E576000F39B16 /* Roman Stone.png in Resources */ = {isa = PBXBuildFile; fileRef = A2D42572174E576000F39B16 /* Roman Stone.png */; };
+		A2D42575174E576000F39B16 /* Roman Stone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A2D42573174E576000F39B16 /* Roman Stone@2x.png */; };
+		A2E707DD19BCC2C400529787 /* 29.png in Resources */ = {isa = PBXBuildFile; fileRef = A2E707D919BCC2C400529787 /* 29.png */; };
+		A2E707DE19BCC2C400529787 /* 58.png in Resources */ = {isa = PBXBuildFile; fileRef = A2E707DA19BCC2C400529787 /* 58.png */; };
+		A2E707DF19BCC2C400529787 /* 80.png in Resources */ = {isa = PBXBuildFile; fileRef = A2E707DB19BCC2C400529787 /* 80.png */; };
+		A2E707E019BCC2C400529787 /* 120.png in Resources */ = {isa = PBXBuildFile; fileRef = A2E707DC19BCC2C400529787 /* 120.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A210245316DB9779008D2D9F /* WelcomeToChesterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WelcomeToChesterViewController.h; path = Chester360/WelcomeToChesterViewController.h; sourceTree = "<group>"; };
+		A210245416DB9779008D2D9F /* WelcomeToChesterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WelcomeToChesterViewController.m; path = Chester360/WelcomeToChesterViewController.m; sourceTree = "<group>"; };
+		A210245616DBBB3A008D2D9F /* See&DoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "See&DoViewController.h"; path = "Chester360/See&DoViewController.h"; sourceTree = "<group>"; };
+		A210245716DBBB3A008D2D9F /* See&DoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "See&DoViewController.m"; path = "Chester360/See&DoViewController.m"; sourceTree = "<group>"; };
+		A210245C16DBC4E2008D2D9F /* SeeAndDoAttractionPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SeeAndDoAttractionPageViewController.h; path = Chester360/SeeAndDoAttractionPageViewController.h; sourceTree = "<group>"; };
+		A210245D16DBC4E2008D2D9F /* SeeAndDoAttractionPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SeeAndDoAttractionPageViewController.m; path = Chester360/SeeAndDoAttractionPageViewController.m; sourceTree = "<group>"; };
+		A24B1A4816EA48C900B4E417 /* Shopping.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Shopping.png; sourceTree = "<group>"; };
+		A24B1A4916EA48C900B4E417 /* Shopping@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Shopping@2x.png"; sourceTree = "<group>"; };
+		A26CA05416EFA5E300EEFE4D /* PanoFeatureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PanoFeatureViewController.h; path = Chester360/PanoFeatureViewController.h; sourceTree = "<group>"; };
+		A26CA05516EFA5E300EEFE4D /* PanoFeatureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PanoFeatureViewController.m; path = Chester360/PanoFeatureViewController.m; sourceTree = "<group>"; };
+		A283510E16CE8D4100B61840 /* Chester 360.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chester 360.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A283511116CE8D4100B61840 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A283511316CE8D4100B61840 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A283511516CE8D4100B61840 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A283511916CE8D4100B61840 /* Chester 360-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Chester 360-Info.plist"; sourceTree = "<group>"; };
+		A283511B16CE8D4100B61840 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A283511D16CE8D4100B61840 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A283511F16CE8D4100B61840 /* Chester 360-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Chester 360-Prefix.pch"; sourceTree = "<group>"; };
+		A283512016CE8D4100B61840 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A283512116CE8D4100B61840 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A283512A16CE8D4100B61840 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		A283514216CE93F000B61840 /* TabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TabBarController.h; path = Chester360/TabBarController.h; sourceTree = "<group>"; };
+		A283514316CE93F000B61840 /* TabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TabBarController.m; path = Chester360/TabBarController.m; sourceTree = "<group>"; };
+		A283515C16D2BE4A00B61840 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		A283515E16D2BEF000B61840 /* MapTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapTabViewController.h; path = Chester360/MapTabViewController.h; sourceTree = "<group>"; };
+		A283515F16D2BEF000B61840 /* MapTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapTabViewController.m; path = Chester360/MapTabViewController.m; sourceTree = "<group>"; };
+		A283516116D2C03600B61840 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		A283518316D2EEA800B61840 /* Guide.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Guide.png; sourceTree = "<group>"; };
+		A283518416D2EEA800B61840 /* Guide@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Guide@2x.png"; sourceTree = "<group>"; };
+		A283518516D2EEA800B61840 /* Info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Info.png; sourceTree = "<group>"; };
+		A283518616D2EEA800B61840 /* Info@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Info@2x.png"; sourceTree = "<group>"; };
+		A283518716D2EEA800B61840 /* Map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Map.png; sourceTree = "<group>"; };
+		A283518816D2EEA800B61840 /* Map@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Map@2x.png"; sourceTree = "<group>"; };
+		A283518A16D2EEA800B61840 /* Website@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Website@2x.png"; sourceTree = "<group>"; };
+		A283519316D2F06700B61840 /* Website.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Website.png; sourceTree = "<group>"; };
+		A283519516D2F33000B61840 /* WebsiteTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebsiteTabViewController.h; sourceTree = "<group>"; };
+		A283519616D2F33000B61840 /* WebsiteTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebsiteTabViewController.m; sourceTree = "<group>"; };
+		A283519816D8221000B61840 /* Chester360NavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Chester360NavigationController.h; path = Chester360/Chester360NavigationController.h; sourceTree = "<group>"; };
+		A283519916D8221100B61840 /* Chester360NavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Chester360NavigationController.m; path = Chester360/Chester360NavigationController.m; sourceTree = "<group>"; };
+		A283519E16D827D500B61840 /* GuideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GuideViewController.h; path = Chester360/GuideViewController.h; sourceTree = "<group>"; };
+		A283519F16D827D500B61840 /* GuideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GuideViewController.m; path = Chester360/GuideViewController.m; sourceTree = "<group>"; };
+		A28639DA16DCE32E0074354B /* myData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = myData.plist; path = Chester360/myData.plist; sourceTree = "<group>"; };
+		A28639DC16DD13A20074354B /* PanoramaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PanoramaViewController.h; path = Chester360/PanoramaViewController.h; sourceTree = "<group>"; };
+		A28639DD16DD13A20074354B /* PanoramaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PanoramaViewController.m; path = Chester360/PanoramaViewController.m; sourceTree = "<group>"; };
+		A28639E016DD14B30074354B /* JAPanoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JAPanoView.h; sourceTree = "<group>"; };
+		A28639E116DD14B30074354B /* JAPanoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JAPanoView.m; sourceTree = "<group>"; };
+		A28639E416DD17AA0074354B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A28639F316DE112D0074354B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		A2863A0116DF769D0074354B /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		A2863A0816E00DBF0074354B /* Welcome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Welcome.png; sourceTree = "<group>"; };
+		A2863A0916E00DBF0074354B /* Welcome@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Welcome@2x.png"; sourceTree = "<group>"; };
+		A2863A1016E01D0B0074354B /* Town Hall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Town Hall.png"; sourceTree = "<group>"; };
+		A2863A1116E01D0B0074354B /* Town Hall@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Town Hall@2x.png"; sourceTree = "<group>"; };
+		A2863A1416E01FED0074354B /* Cathedral.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cathedral.png; sourceTree = "<group>"; };
+		A2863A1516E01FED0074354B /* Cathedral@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Cathedral@2x.png"; sourceTree = "<group>"; };
+		A2863A2316E0BA730074354B /* Amphitheatre.back.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Amphitheatre.back.jpg; sourceTree = "<group>"; };
+		A2863A2416E0BA730074354B /* Amphitheatre.bottom.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Amphitheatre.bottom.jpg; sourceTree = "<group>"; };
+		A2863A2516E0BA730074354B /* Amphitheatre.front.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Amphitheatre.front.jpg; sourceTree = "<group>"; };
+		A2863A2616E0BA730074354B /* Amphitheatre.left.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Amphitheatre.left.jpg; sourceTree = "<group>"; };
+		A2863A2716E0BA730074354B /* Amphitheatre.right.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Amphitheatre.right.jpg; sourceTree = "<group>"; };
+		A2863A2816E0BA730074354B /* Amphitheatre.top.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Amphitheatre.top.jpg; sourceTree = "<group>"; };
+		A2863A2A16E0BA730074354B /* Cathedral.back.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Cathedral.back.jpg; sourceTree = "<group>"; };
+		A2863A2B16E0BA730074354B /* Cathedral.bottom.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Cathedral.bottom.jpg; sourceTree = "<group>"; };
+		A2863A2C16E0BA730074354B /* Cathedral.front.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Cathedral.front.jpg; sourceTree = "<group>"; };
+		A2863A2D16E0BA730074354B /* Cathedral.left.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Cathedral.left.jpg; sourceTree = "<group>"; };
+		A2863A2E16E0BA730074354B /* Cathedral.right.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Cathedral.right.jpg; sourceTree = "<group>"; };
+		A2863A2F16E0BA730074354B /* Cathedral.top.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Cathedral.top.jpg; sourceTree = "<group>"; };
+		A2863A3116E0BA730074354B /* Town Hall.back.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Town Hall.back.jpg"; sourceTree = "<group>"; };
+		A2863A3216E0BA730074354B /* Town Hall.bottom.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Town Hall.bottom.jpg"; sourceTree = "<group>"; };
+		A2863A3316E0BA730074354B /* Town Hall.front.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Town Hall.front.jpg"; sourceTree = "<group>"; };
+		A2863A3416E0BA730074354B /* Town Hall.left.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Town Hall.left.jpg"; sourceTree = "<group>"; };
+		A2863A3516E0BA730074354B /* Town Hall.right.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Town Hall.right.jpg"; sourceTree = "<group>"; };
+		A2863A3616E0BA730074354B /* Town Hall.top.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Town Hall.top.jpg"; sourceTree = "<group>"; };
+		A2863A4A16E0C0D90074354B /* Clock Tower.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Clock Tower.png"; sourceTree = "<group>"; };
+		A2863A4B16E0C0D90074354B /* Clock Tower@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Clock Tower@2x.png"; sourceTree = "<group>"; };
+		A2863A4C16E0C0D90074354B /* Roman Amphitheatre.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Roman Amphitheatre.png"; sourceTree = "<group>"; };
+		A2863A4D16E0C0DA0074354B /* Roman Amphitheatre@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Roman Amphitheatre@2x.png"; sourceTree = "<group>"; };
+		A2863A5216E0DAFE0074354B /* CameraIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CameraIcon.png; sourceTree = "<group>"; };
+		A2863A5416E745530074354B /* Welcome2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Welcome2.png; sourceTree = "<group>"; };
+		A2863A5516E745530074354B /* Welcome2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Welcome2@2x.png"; sourceTree = "<group>"; };
+		A2863A5916E747030074354B /* Clock Tower.back.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Clock Tower.back.jpg"; sourceTree = "<group>"; };
+		A2863A5A16E747030074354B /* Clock Tower.bottom.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Clock Tower.bottom.jpg"; sourceTree = "<group>"; };
+		A2863A5B16E747030074354B /* Clock Tower.front.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Clock Tower.front.jpg"; sourceTree = "<group>"; };
+		A2863A5C16E747030074354B /* Clock Tower.left.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Clock Tower.left.jpg"; sourceTree = "<group>"; };
+		A2863A5D16E747030074354B /* Clock Tower.right.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Clock Tower.right.jpg"; sourceTree = "<group>"; };
+		A2863A5E16E747030074354B /* Clock Tower.top.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Clock Tower.top.jpg"; sourceTree = "<group>"; };
+		A2863A6716E749D70074354B /* ChesterStreet.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = ChesterStreet.m4a; sourceTree = "<group>"; };
+		A2863A6916E76F910074354B /* Nightlife.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Nightlife.png; sourceTree = "<group>"; };
+		A2863A6A16E76F910074354B /* Nightlife@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Nightlife@2x.png"; sourceTree = "<group>"; };
+		A2863A6B16E76F920074354B /* Restaurants.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Restaurants.png; sourceTree = "<group>"; };
+		A2863A6C16E76F920074354B /* Restaurants@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Restaurants@2x.png"; sourceTree = "<group>"; };
+		A2863A6D16E76F920074354B /* See & Do.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "See & Do.png"; sourceTree = "<group>"; };
+		A2863A6E16E76F920074354B /* See & Do@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "See & Do@2x.png"; sourceTree = "<group>"; };
+		A2863A7116E76F930074354B /* University.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = University.png; sourceTree = "<group>"; };
+		A2863A7216E76F930074354B /* University@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "University@2x.png"; sourceTree = "<group>"; };
+		A2863A7316E76F930074354B /* Welcome to Chester.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Welcome to Chester.png"; sourceTree = "<group>"; };
+		A2863A7416E76F930074354B /* Welcome to Chester@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Welcome to Chester@2x.png"; sourceTree = "<group>"; };
+		A2863A9216E77E410074354B /* Chester360Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Chester360Icon.png; sourceTree = "<group>"; };
+		A2863A9516E780720074354B /* Chester360Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Chester360Icon@2x.png"; sourceTree = "<group>"; };
+		A2863A9716E780880074354B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		A2863A9916E780A60074354B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		A2863A9B16E780AF0074354B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		A298FDE216F14AB7006FD210 /* Chester University.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Chester University.png"; sourceTree = "<group>"; };
+		A298FDE316F14AB7006FD210 /* Chester University@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Chester University@2x.png"; sourceTree = "<group>"; };
+		A298FDEA16F14D64006FD210 /* Binks Building.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Binks Building.png"; sourceTree = "<group>"; };
+		A298FDEB16F14D64006FD210 /* Binks Building@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Binks Building@2x.png"; sourceTree = "<group>"; };
+		A2A94C031757DDBA006C29DE /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		A2A94C051757E7FD006C29DE /* HowToUseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HowToUseViewController.h; path = Chester360/HowToUseViewController.h; sourceTree = "<group>"; };
+		A2A94C061757E7FD006C29DE /* HowToUseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HowToUseViewController.m; path = Chester360/HowToUseViewController.m; sourceTree = "<group>"; };
+		A2AAA84E173ACFBF003E6E16 /* RaceCourse.back.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = RaceCourse.back.jpg; sourceTree = "<group>"; };
+		A2AAA84F173ACFBF003E6E16 /* RaceCourse.bottom.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = RaceCourse.bottom.jpg; sourceTree = "<group>"; };
+		A2AAA850173ACFBF003E6E16 /* RaceCourse.front.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = RaceCourse.front.jpg; sourceTree = "<group>"; };
+		A2AAA852173ACFBF003E6E16 /* RaceCourse.left.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = RaceCourse.left.jpg; sourceTree = "<group>"; };
+		A2AAA853173ACFBF003E6E16 /* RaceCourse.right.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = RaceCourse.right.jpg; sourceTree = "<group>"; };
+		A2AAA854173ACFBF003E6E16 /* RaceCourse.top.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = RaceCourse.top.jpg; sourceTree = "<group>"; };
+		A2AAA85D173AD167003E6E16 /* Cross.back.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Cross.back.jpg; sourceTree = "<group>"; };
+		A2AAA85E173AD167003E6E16 /* Cross.bottom.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Cross.bottom.jpg; sourceTree = "<group>"; };
+		A2AAA85F173AD167003E6E16 /* Cross.front.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Cross.front.jpg; sourceTree = "<group>"; };
+		A2AAA861173AD167003E6E16 /* Cross.right.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Cross.right.jpg; sourceTree = "<group>"; };
+		A2AAA862173AD167003E6E16 /* Cross.top.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Cross.top.jpg; sourceTree = "<group>"; };
+		A2AAA869173AD22C003E6E16 /* Cross.left.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Cross.left.jpg; sourceTree = "<group>"; };
+		A2AAA86C173AD2B3003E6E16 /* RiversideBridge.back.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = RiversideBridge.back.jpg; path = RiversideBridge/RiversideBridge.back.jpg; sourceTree = "<group>"; };
+		A2AAA86D173AD2B3003E6E16 /* RiversideBridge.bottom.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = RiversideBridge.bottom.jpg; path = RiversideBridge/RiversideBridge.bottom.jpg; sourceTree = "<group>"; };
+		A2AAA86E173AD2B3003E6E16 /* RiversideBridge.front.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = RiversideBridge.front.jpg; path = RiversideBridge/RiversideBridge.front.jpg; sourceTree = "<group>"; };
+		A2AAA86F173AD2B3003E6E16 /* RiversideBridge.left.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = RiversideBridge.left.jpg; path = RiversideBridge/RiversideBridge.left.jpg; sourceTree = "<group>"; };
+		A2AAA870173AD2B3003E6E16 /* RiversideBridge.right.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = RiversideBridge.right.jpg; path = RiversideBridge/RiversideBridge.right.jpg; sourceTree = "<group>"; };
+		A2AAA871173AD2B3003E6E16 /* RiversideBridge.top.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = RiversideBridge.top.jpg; path = RiversideBridge/RiversideBridge.top.jpg; sourceTree = "<group>"; };
+		A2C0FC9A16F13A5F00BB9C37 /* Grosvenor Hotel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Grosvenor Hotel.png"; sourceTree = "<group>"; };
+		A2C0FC9B16F13A5F00BB9C37 /* Grosvenor Hotel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Grosvenor Hotel@2x.png"; sourceTree = "<group>"; };
+		A2C0FC9F16F13A8500BB9C37 /* Tethering Stone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Tethering Stone.png"; sourceTree = "<group>"; };
+		A2C0FCA016F13A8500BB9C37 /* Tethering Stone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Tethering Stone@2x.png"; sourceTree = "<group>"; };
+		A2C0FCA416F13AAD00BB9C37 /* Memorial Cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Memorial Cross.png"; sourceTree = "<group>"; };
+		A2C0FCA516F13AAD00BB9C37 /* Memorial Cross@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Memorial Cross@2x.png"; sourceTree = "<group>"; };
+		A2C0FCA916F13ADF00BB9C37 /* A Cellebration of Chester.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "A Cellebration of Chester.png"; sourceTree = "<group>"; };
+		A2C0FCAA16F13ADF00BB9C37 /* A Cellebration of Chester@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "A Cellebration of Chester@2x.png"; sourceTree = "<group>"; };
+		A2C0FCAE16F1443500BB9C37 /* University.back.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = University.back.jpg; sourceTree = "<group>"; };
+		A2C0FCAF16F1443500BB9C37 /* University.bottom.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = University.bottom.jpg; sourceTree = "<group>"; };
+		A2C0FCB016F1443500BB9C37 /* University.front.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = University.front.jpg; sourceTree = "<group>"; };
+		A2C0FCB116F1443500BB9C37 /* University.left.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = University.left.jpg; sourceTree = "<group>"; };
+		A2C0FCB216F1443500BB9C37 /* University.right.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = University.right.jpg; sourceTree = "<group>"; };
+		A2C0FCB316F1443500BB9C37 /* University.top.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = University.top.jpg; sourceTree = "<group>"; };
+		A2CE90FF16E78F8400F7F0F9 /* ShoppingPage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ShoppingPage.png; sourceTree = "<group>"; };
+		A2CE910016E78F8400F7F0F9 /* ShoppingPage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ShoppingPage@2x.png"; sourceTree = "<group>"; };
+		A2D1325019B3BC440097527D /* Ios7Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ios7Background.png; sourceTree = "<group>"; };
+		A2D42562174E4C7A00F39B16 /* Riverside Bridge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Riverside Bridge.png"; path = "RiversideBridge/Riverside Bridge.png"; sourceTree = "<group>"; };
+		A2D42563174E4C7A00F39B16 /* Riverside Bridge@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Riverside Bridge@2x.png"; path = "RiversideBridge/Riverside Bridge@2x.png"; sourceTree = "<group>"; };
+		A2D4256A174E4C8E00F39B16 /* Chester Racecourse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Chester Racecourse.png"; sourceTree = "<group>"; };
+		A2D4256B174E4C8E00F39B16 /* Chester Racecourse@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Chester Racecourse@2x.png"; sourceTree = "<group>"; };
+		A2D4256E174E4D3900F39B16 /* Crossroads.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Crossroads.png; sourceTree = "<group>"; };
+		A2D4256F174E4D3900F39B16 /* Crossroads@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Crossroads@2x.png"; sourceTree = "<group>"; };
+		A2D42572174E576000F39B16 /* Roman Stone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Roman Stone.png"; sourceTree = "<group>"; };
+		A2D42573174E576000F39B16 /* Roman Stone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Roman Stone@2x.png"; sourceTree = "<group>"; };
+		A2E707D919BCC2C400529787 /* 29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 29.png; path = "../../Dropbox/Documents/Personal Projects/iOS Applications/Chester 360/Chester360 External Resources/SplashScreen and System Icons/29.png"; sourceTree = "<group>"; };
+		A2E707DA19BCC2C400529787 /* 58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 58.png; path = "../../Dropbox/Documents/Personal Projects/iOS Applications/Chester 360/Chester360 External Resources/SplashScreen and System Icons/58.png"; sourceTree = "<group>"; };
+		A2E707DB19BCC2C400529787 /* 80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 80.png; path = "../../Dropbox/Documents/Personal Projects/iOS Applications/Chester 360/Chester360 External Resources/SplashScreen and System Icons/80.png"; sourceTree = "<group>"; };
+		A2E707DC19BCC2C400529787 /* 120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 120.png; path = "../../Dropbox/Documents/Personal Projects/iOS Applications/Chester 360/Chester360 External Resources/SplashScreen and System Icons/120.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A283510B16CE8D4100B61840 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2A94C041757DDBA006C29DE /* iAd.framework in Frameworks */,
+				A2863A0216DF769D0074354B /* CoreMotion.framework in Frameworks */,
+				A28639F416DE112D0074354B /* AVFoundation.framework in Frameworks */,
+				A28639E516DD17AA0074354B /* QuartzCore.framework in Frameworks */,
+				A283516216D2C03600B61840 /* MapKit.framework in Frameworks */,
+				A283515D16D2BE4A00B61840 /* CoreLocation.framework in Frameworks */,
+				A283511216CE8D4100B61840 /* UIKit.framework in Frameworks */,
+				A283511416CE8D4100B61840 /* Foundation.framework in Frameworks */,
+				A283511616CE8D4100B61840 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A283510516CE8D4100B61840 = {
+			isa = PBXGroup;
+			children = (
+				A2863A9B16E780AF0074354B /* Default-568h@2x.png */,
+				A2863A9916E780A60074354B /* Default@2x.png */,
+				A2863A9716E780880074354B /* Default.png */,
+				A2863A9516E780720074354B /* Chester360Icon@2x.png */,
+				A2863A9216E77E410074354B /* Chester360Icon.png */,
+				A283511716CE8D4100B61840 /* Chester360 */,
+				A283511016CE8D4100B61840 /* Frameworks */,
+				A283510F16CE8D4100B61840 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A283510F16CE8D4100B61840 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A283510E16CE8D4100B61840 /* Chester 360.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A283511016CE8D4100B61840 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A2A94C031757DDBA006C29DE /* iAd.framework */,
+				A2863A0116DF769D0074354B /* CoreMotion.framework */,
+				A28639F316DE112D0074354B /* AVFoundation.framework */,
+				A28639E416DD17AA0074354B /* QuartzCore.framework */,
+				A283516116D2C03600B61840 /* MapKit.framework */,
+				A283515C16D2BE4A00B61840 /* CoreLocation.framework */,
+				A283511116CE8D4100B61840 /* UIKit.framework */,
+				A283511316CE8D4100B61840 /* Foundation.framework */,
+				A283511516CE8D4100B61840 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A283511716CE8D4100B61840 /* Chester360 */ = {
+			isa = PBXGroup;
+			children = (
+				A283512016CE8D4100B61840 /* AppDelegate.h */,
+				A283512116CE8D4100B61840 /* AppDelegate.m */,
+				A283512916CE8D4100B61840 /* MainStoryboard.storyboard */,
+				A28639D316DCD8AF0074354B /* Plists */,
+				A283513E16CE930900B61840 /* Classes */,
+				A283513416CE916300B61840 /* Resources */,
+				A283511816CE8D4100B61840 /* Supporting Files */,
+			);
+			path = Chester360;
+			sourceTree = "<group>";
+		};
+		A283511816CE8D4100B61840 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A283511916CE8D4100B61840 /* Chester 360-Info.plist */,
+				A283511A16CE8D4100B61840 /* InfoPlist.strings */,
+				A283511D16CE8D4100B61840 /* main.m */,
+				A283511F16CE8D4100B61840 /* Chester 360-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A283513416CE916300B61840 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A28639F516DE15960074354B /* Sounds */,
+				A283513516CE916F00B61840 /* Images */,
+			);
+			name = Resources;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		A283513516CE916F00B61840 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				A2863A0316E00D420074354B /* Attraction Images */,
+				A28351A216D8288000B61840 /* Display Images */,
+				A283513616CE917800B61840 /* System Images */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		A283513616CE917800B61840 /* System Images */ = {
+			isa = PBXGroup;
+			children = (
+				A2E707D919BCC2C400529787 /* 29.png */,
+				A2E707DA19BCC2C400529787 /* 58.png */,
+				A2E707DB19BCC2C400529787 /* 80.png */,
+				A2E707DC19BCC2C400529787 /* 120.png */,
+				A2D1325019B3BC440097527D /* Ios7Background.png */,
+				A24B1A4816EA48C900B4E417 /* Shopping.png */,
+				A24B1A4916EA48C900B4E417 /* Shopping@2x.png */,
+				A2863A6916E76F910074354B /* Nightlife.png */,
+				A2863A6A16E76F910074354B /* Nightlife@2x.png */,
+				A2863A6B16E76F920074354B /* Restaurants.png */,
+				A2863A6C16E76F920074354B /* Restaurants@2x.png */,
+				A2863A6D16E76F920074354B /* See & Do.png */,
+				A2863A6E16E76F920074354B /* See & Do@2x.png */,
+				A2863A7116E76F930074354B /* University.png */,
+				A2863A7216E76F930074354B /* University@2x.png */,
+				A2863A7316E76F930074354B /* Welcome to Chester.png */,
+				A2863A7416E76F930074354B /* Welcome to Chester@2x.png */,
+				A2863A5216E0DAFE0074354B /* CameraIcon.png */,
+				A283519316D2F06700B61840 /* Website.png */,
+				A283518316D2EEA800B61840 /* Guide.png */,
+				A283518416D2EEA800B61840 /* Guide@2x.png */,
+				A283518516D2EEA800B61840 /* Info.png */,
+				A283518616D2EEA800B61840 /* Info@2x.png */,
+				A283518716D2EEA800B61840 /* Map.png */,
+				A283518816D2EEA800B61840 /* Map@2x.png */,
+				A283518A16D2EEA800B61840 /* Website@2x.png */,
+			);
+			name = "System Images";
+			sourceTree = "<group>";
+		};
+		A283513E16CE930900B61840 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A283514216CE93F000B61840 /* TabBarController.h */,
+				A283514316CE93F000B61840 /* TabBarController.m */,
+				A283515E16D2BEF000B61840 /* MapTabViewController.h */,
+				A283515F16D2BEF000B61840 /* MapTabViewController.m */,
+				A283519516D2F33000B61840 /* WebsiteTabViewController.h */,
+				A283519616D2F33000B61840 /* WebsiteTabViewController.m */,
+				A283519816D8221000B61840 /* Chester360NavigationController.h */,
+				A283519916D8221100B61840 /* Chester360NavigationController.m */,
+				A283519E16D827D500B61840 /* GuideViewController.h */,
+				A283519F16D827D500B61840 /* GuideViewController.m */,
+				A210245316DB9779008D2D9F /* WelcomeToChesterViewController.h */,
+				A210245416DB9779008D2D9F /* WelcomeToChesterViewController.m */,
+				A210245616DBBB3A008D2D9F /* See&DoViewController.h */,
+				A210245716DBBB3A008D2D9F /* See&DoViewController.m */,
+				A210245C16DBC4E2008D2D9F /* SeeAndDoAttractionPageViewController.h */,
+				A210245D16DBC4E2008D2D9F /* SeeAndDoAttractionPageViewController.m */,
+				A28639DC16DD13A20074354B /* PanoramaViewController.h */,
+				A28639DD16DD13A20074354B /* PanoramaViewController.m */,
+				A28639DF16DD148E0074354B /* JAPanoViewClass */,
+				A26CA05416EFA5E300EEFE4D /* PanoFeatureViewController.h */,
+				A26CA05516EFA5E300EEFE4D /* PanoFeatureViewController.m */,
+				A2A94C051757E7FD006C29DE /* HowToUseViewController.h */,
+				A2A94C061757E7FD006C29DE /* HowToUseViewController.m */,
+			);
+			name = Classes;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		A28351A216D8288000B61840 /* Display Images */ = {
+			isa = PBXGroup;
+			children = (
+				A2CE90FF16E78F8400F7F0F9 /* ShoppingPage.png */,
+				A2CE910016E78F8400F7F0F9 /* ShoppingPage@2x.png */,
+				A2863A5416E745530074354B /* Welcome2.png */,
+				A2863A5516E745530074354B /* Welcome2@2x.png */,
+				A2863A0816E00DBF0074354B /* Welcome.png */,
+				A2863A0916E00DBF0074354B /* Welcome@2x.png */,
+			);
+			name = "Display Images";
+			sourceTree = "<group>";
+		};
+		A28639D316DCD8AF0074354B /* Plists */ = {
+			isa = PBXGroup;
+			children = (
+				A28639DA16DCE32E0074354B /* myData.plist */,
+			);
+			name = Plists;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		A28639DF16DD148E0074354B /* JAPanoViewClass */ = {
+			isa = PBXGroup;
+			children = (
+				A28639E016DD14B30074354B /* JAPanoView.h */,
+				A28639E116DD14B30074354B /* JAPanoView.m */,
+			);
+			name = JAPanoViewClass;
+			path = Chester360;
+			sourceTree = "<group>";
+		};
+		A28639F516DE15960074354B /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				A2863A6716E749D70074354B /* ChesterStreet.m4a */,
+			);
+			name = Sounds;
+			sourceTree = "<group>";
+		};
+		A2863A0316E00D420074354B /* Attraction Images */ = {
+			isa = PBXGroup;
+			children = (
+				A2863A4916E0BA7F0074354B /* Normal */,
+				A2863A2116E0BA5C0074354B /* Panorama */,
+			);
+			name = "Attraction Images";
+			sourceTree = "<group>";
+		};
+		A2863A2116E0BA5C0074354B /* Panorama */ = {
+			isa = PBXGroup;
+			children = (
+				A2D4255F174E490700F39B16 /* Riverside Bridge */,
+				A2AAA85C173AD167003E6E16 /* Chester Cross */,
+				A2AAA84D173ACFBF003E6E16 /* RaceCourse */,
+				A2C0FCAD16F1443500BB9C37 /* University */,
+				A2863A3016E0BA730074354B /* Town Hall */,
+				A2863A5816E747030074354B /* Clock Tower */,
+				A2863A2916E0BA730074354B /* Cathedral */,
+				A2863A2216E0BA730074354B /* Amphitheatre */,
+			);
+			name = Panorama;
+			sourceTree = "<group>";
+		};
+		A2863A2216E0BA730074354B /* Amphitheatre */ = {
+			isa = PBXGroup;
+			children = (
+				A2C0FC9E16F13A6C00BB9C37 /* Tethering Stone */,
+				A2863A2316E0BA730074354B /* Amphitheatre.back.jpg */,
+				A2863A2416E0BA730074354B /* Amphitheatre.bottom.jpg */,
+				A2863A2516E0BA730074354B /* Amphitheatre.front.jpg */,
+				A2863A2616E0BA730074354B /* Amphitheatre.left.jpg */,
+				A2863A2716E0BA730074354B /* Amphitheatre.right.jpg */,
+				A2863A2816E0BA730074354B /* Amphitheatre.top.jpg */,
+			);
+			path = Amphitheatre;
+			sourceTree = "<group>";
+		};
+		A2863A2916E0BA730074354B /* Cathedral */ = {
+			isa = PBXGroup;
+			children = (
+				A2C0FCA316F13A9700BB9C37 /* Memorial Cross */,
+				A2863A2A16E0BA730074354B /* Cathedral.back.jpg */,
+				A2863A2B16E0BA730074354B /* Cathedral.bottom.jpg */,
+				A2863A2C16E0BA730074354B /* Cathedral.front.jpg */,
+				A2863A2D16E0BA730074354B /* Cathedral.left.jpg */,
+				A2863A2E16E0BA730074354B /* Cathedral.right.jpg */,
+				A2863A2F16E0BA730074354B /* Cathedral.top.jpg */,
+			);
+			path = Cathedral;
+			sourceTree = "<group>";
+		};
+		A2863A3016E0BA730074354B /* Town Hall */ = {
+			isa = PBXGroup;
+			children = (
+				A2C0FCA816F13ABE00BB9C37 /* Cellebration Statue */,
+				A2863A3116E0BA730074354B /* Town Hall.back.jpg */,
+				A2863A3216E0BA730074354B /* Town Hall.bottom.jpg */,
+				A2863A3316E0BA730074354B /* Town Hall.front.jpg */,
+				A2863A3416E0BA730074354B /* Town Hall.left.jpg */,
+				A2863A3516E0BA730074354B /* Town Hall.right.jpg */,
+				A2863A3616E0BA730074354B /* Town Hall.top.jpg */,
+			);
+			path = "Town Hall";
+			sourceTree = "<group>";
+		};
+		A2863A4916E0BA7F0074354B /* Normal */ = {
+			isa = PBXGroup;
+			children = (
+				A298FDE216F14AB7006FD210 /* Chester University.png */,
+				A298FDE316F14AB7006FD210 /* Chester University@2x.png */,
+				A2863A4A16E0C0D90074354B /* Clock Tower.png */,
+				A2863A4B16E0C0D90074354B /* Clock Tower@2x.png */,
+				A2863A4C16E0C0D90074354B /* Roman Amphitheatre.png */,
+				A2863A4D16E0C0DA0074354B /* Roman Amphitheatre@2x.png */,
+				A2863A1416E01FED0074354B /* Cathedral.png */,
+				A2863A1516E01FED0074354B /* Cathedral@2x.png */,
+				A2863A1016E01D0B0074354B /* Town Hall.png */,
+				A2863A1116E01D0B0074354B /* Town Hall@2x.png */,
+			);
+			name = Normal;
+			sourceTree = "<group>";
+		};
+		A2863A5816E747030074354B /* Clock Tower */ = {
+			isa = PBXGroup;
+			children = (
+				A2C0FC9916F13A3900BB9C37 /* Grosvenor Hotel */,
+				A2863A5916E747030074354B /* Clock Tower.back.jpg */,
+				A2863A5A16E747030074354B /* Clock Tower.bottom.jpg */,
+				A2863A5B16E747030074354B /* Clock Tower.front.jpg */,
+				A2863A5C16E747030074354B /* Clock Tower.left.jpg */,
+				A2863A5D16E747030074354B /* Clock Tower.right.jpg */,
+				A2863A5E16E747030074354B /* Clock Tower.top.jpg */,
+			);
+			path = "Clock Tower";
+			sourceTree = "<group>";
+		};
+		A2AAA84D173ACFBF003E6E16 /* RaceCourse */ = {
+			isa = PBXGroup;
+			children = (
+				A2D42572174E576000F39B16 /* Roman Stone.png */,
+				A2D42573174E576000F39B16 /* Roman Stone@2x.png */,
+				A2D4256A174E4C8E00F39B16 /* Chester Racecourse.png */,
+				A2D4256B174E4C8E00F39B16 /* Chester Racecourse@2x.png */,
+				A2AAA84E173ACFBF003E6E16 /* RaceCourse.back.jpg */,
+				A2AAA84F173ACFBF003E6E16 /* RaceCourse.bottom.jpg */,
+				A2AAA850173ACFBF003E6E16 /* RaceCourse.front.jpg */,
+				A2AAA852173ACFBF003E6E16 /* RaceCourse.left.jpg */,
+				A2AAA853173ACFBF003E6E16 /* RaceCourse.right.jpg */,
+				A2AAA854173ACFBF003E6E16 /* RaceCourse.top.jpg */,
+			);
+			path = RaceCourse;
+			sourceTree = "<group>";
+		};
+		A2AAA85C173AD167003E6E16 /* Chester Cross */ = {
+			isa = PBXGroup;
+			children = (
+				A2D4256E174E4D3900F39B16 /* Crossroads.png */,
+				A2D4256F174E4D3900F39B16 /* Crossroads@2x.png */,
+				A2AAA869173AD22C003E6E16 /* Cross.left.jpg */,
+				A2AAA85D173AD167003E6E16 /* Cross.back.jpg */,
+				A2AAA85E173AD167003E6E16 /* Cross.bottom.jpg */,
+				A2AAA85F173AD167003E6E16 /* Cross.front.jpg */,
+				A2AAA861173AD167003E6E16 /* Cross.right.jpg */,
+				A2AAA862173AD167003E6E16 /* Cross.top.jpg */,
+			);
+			path = "Chester Cross";
+			sourceTree = "<group>";
+		};
+		A2C0FC9916F13A3900BB9C37 /* Grosvenor Hotel */ = {
+			isa = PBXGroup;
+			children = (
+				A2C0FC9A16F13A5F00BB9C37 /* Grosvenor Hotel.png */,
+				A2C0FC9B16F13A5F00BB9C37 /* Grosvenor Hotel@2x.png */,
+			);
+			name = "Grosvenor Hotel";
+			sourceTree = "<group>";
+		};
+		A2C0FC9E16F13A6C00BB9C37 /* Tethering Stone */ = {
+			isa = PBXGroup;
+			children = (
+				A2C0FC9F16F13A8500BB9C37 /* Tethering Stone.png */,
+				A2C0FCA016F13A8500BB9C37 /* Tethering Stone@2x.png */,
+			);
+			name = "Tethering Stone";
+			sourceTree = "<group>";
+		};
+		A2C0FCA316F13A9700BB9C37 /* Memorial Cross */ = {
+			isa = PBXGroup;
+			children = (
+				A2C0FCA416F13AAD00BB9C37 /* Memorial Cross.png */,
+				A2C0FCA516F13AAD00BB9C37 /* Memorial Cross@2x.png */,
+			);
+			name = "Memorial Cross";
+			sourceTree = "<group>";
+		};
+		A2C0FCA816F13ABE00BB9C37 /* Cellebration Statue */ = {
+			isa = PBXGroup;
+			children = (
+				A2C0FCA916F13ADF00BB9C37 /* A Cellebration of Chester.png */,
+				A2C0FCAA16F13ADF00BB9C37 /* A Cellebration of Chester@2x.png */,
+			);
+			name = "Cellebration Statue";
+			sourceTree = "<group>";
+		};
+		A2C0FCAD16F1443500BB9C37 /* University */ = {
+			isa = PBXGroup;
+			children = (
+				A2C0FCC016F145A700BB9C37 /* Binks */,
+				A2C0FCAE16F1443500BB9C37 /* University.back.jpg */,
+				A2C0FCAF16F1443500BB9C37 /* University.bottom.jpg */,
+				A2C0FCB016F1443500BB9C37 /* University.front.jpg */,
+				A2C0FCB116F1443500BB9C37 /* University.left.jpg */,
+				A2C0FCB216F1443500BB9C37 /* University.right.jpg */,
+				A2C0FCB316F1443500BB9C37 /* University.top.jpg */,
+			);
+			path = University;
+			sourceTree = "<group>";
+		};
+		A2C0FCC016F145A700BB9C37 /* Binks */ = {
+			isa = PBXGroup;
+			children = (
+				A298FDEA16F14D64006FD210 /* Binks Building.png */,
+				A298FDEB16F14D64006FD210 /* Binks Building@2x.png */,
+			);
+			path = Binks;
+			sourceTree = "<group>";
+		};
+		A2D4255F174E490700F39B16 /* Riverside Bridge */ = {
+			isa = PBXGroup;
+			children = (
+				A2D42562174E4C7A00F39B16 /* Riverside Bridge.png */,
+				A2D42563174E4C7A00F39B16 /* Riverside Bridge@2x.png */,
+				A2AAA86C173AD2B3003E6E16 /* RiversideBridge.back.jpg */,
+				A2AAA86D173AD2B3003E6E16 /* RiversideBridge.bottom.jpg */,
+				A2AAA86E173AD2B3003E6E16 /* RiversideBridge.front.jpg */,
+				A2AAA86F173AD2B3003E6E16 /* RiversideBridge.left.jpg */,
+				A2AAA870173AD2B3003E6E16 /* RiversideBridge.right.jpg */,
+				A2AAA871173AD2B3003E6E16 /* RiversideBridge.top.jpg */,
+			);
+			name = "Riverside Bridge";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A283510D16CE8D4100B61840 /* Chester 360 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A283513116CE8D4100B61840 /* Build configuration list for PBXNativeTarget "Chester 360" */;
+			buildPhases = (
+				A283510A16CE8D4100B61840 /* Sources */,
+				A283510B16CE8D4100B61840 /* Frameworks */,
+				A283510C16CE8D4100B61840 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Chester 360";
+			productName = Chester360;
+			productReference = A283510E16CE8D4100B61840 /* Chester 360.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A283510616CE8D4100B61840 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "James Pickup";
+				TargetAttributes = {
+					A283510D16CE8D4100B61840 = {
+						DevelopmentTeam = ZA7KU3KGM6;
+					};
+				};
+			};
+			buildConfigurationList = A283510916CE8D4100B61840 /* Build configuration list for PBXProject "Chester 360" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A283510516CE8D4100B61840;
+			productRefGroup = A283510F16CE8D4100B61840 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A283510D16CE8D4100B61840 /* Chester 360 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A283510C16CE8D4100B61840 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A283511C16CE8D4100B61840 /* InfoPlist.strings in Resources */,
+				A283512B16CE8D4100B61840 /* MainStoryboard.storyboard in Resources */,
+				A283518B16D2EEA800B61840 /* Guide.png in Resources */,
+				A283518C16D2EEA800B61840 /* Guide@2x.png in Resources */,
+				A283518D16D2EEA800B61840 /* Info.png in Resources */,
+				A283518E16D2EEA800B61840 /* Info@2x.png in Resources */,
+				A283518F16D2EEA800B61840 /* Map.png in Resources */,
+				A283519016D2EEA800B61840 /* Map@2x.png in Resources */,
+				A283519216D2EEA800B61840 /* Website@2x.png in Resources */,
+				A283519416D2F06700B61840 /* Website.png in Resources */,
+				A28639DB16DCE32E0074354B /* myData.plist in Resources */,
+				A2863A0A16E00DBF0074354B /* Welcome.png in Resources */,
+				A2863A0B16E00DBF0074354B /* Welcome@2x.png in Resources */,
+				A2863A1216E01D0B0074354B /* Town Hall.png in Resources */,
+				A2863A1316E01D0B0074354B /* Town Hall@2x.png in Resources */,
+				A2863A1816E01FED0074354B /* Cathedral.png in Resources */,
+				A2863A1916E01FED0074354B /* Cathedral@2x.png in Resources */,
+				A2863A3716E0BA730074354B /* Amphitheatre.back.jpg in Resources */,
+				A2863A3816E0BA730074354B /* Amphitheatre.bottom.jpg in Resources */,
+				A2863A3916E0BA730074354B /* Amphitheatre.front.jpg in Resources */,
+				A2863A3A16E0BA730074354B /* Amphitheatre.left.jpg in Resources */,
+				A2863A3B16E0BA730074354B /* Amphitheatre.right.jpg in Resources */,
+				A2863A3C16E0BA730074354B /* Amphitheatre.top.jpg in Resources */,
+				A2863A3D16E0BA730074354B /* Cathedral.back.jpg in Resources */,
+				A2863A3E16E0BA730074354B /* Cathedral.bottom.jpg in Resources */,
+				A2863A3F16E0BA730074354B /* Cathedral.front.jpg in Resources */,
+				A2863A4016E0BA730074354B /* Cathedral.left.jpg in Resources */,
+				A2863A4116E0BA730074354B /* Cathedral.right.jpg in Resources */,
+				A2863A4216E0BA730074354B /* Cathedral.top.jpg in Resources */,
+				A2863A4316E0BA730074354B /* Town Hall.back.jpg in Resources */,
+				A2863A4416E0BA730074354B /* Town Hall.bottom.jpg in Resources */,
+				A2863A4516E0BA730074354B /* Town Hall.front.jpg in Resources */,
+				A2863A4616E0BA730074354B /* Town Hall.left.jpg in Resources */,
+				A2863A4716E0BA730074354B /* Town Hall.right.jpg in Resources */,
+				A2863A4816E0BA730074354B /* Town Hall.top.jpg in Resources */,
+				A2863A4E16E0C0DA0074354B /* Clock Tower.png in Resources */,
+				A2E707DD19BCC2C400529787 /* 29.png in Resources */,
+				A2863A4F16E0C0DA0074354B /* Clock Tower@2x.png in Resources */,
+				A2863A5016E0C0DA0074354B /* Roman Amphitheatre.png in Resources */,
+				A2E707E019BCC2C400529787 /* 120.png in Resources */,
+				A2863A5116E0C0DA0074354B /* Roman Amphitheatre@2x.png in Resources */,
+				A2863A5316E0DAFE0074354B /* CameraIcon.png in Resources */,
+				A2863A5616E745530074354B /* Welcome2.png in Resources */,
+				A2863A5716E745530074354B /* Welcome2@2x.png in Resources */,
+				A2863A5F16E747030074354B /* Clock Tower.back.jpg in Resources */,
+				A2863A6016E747030074354B /* Clock Tower.bottom.jpg in Resources */,
+				A2863A6116E747030074354B /* Clock Tower.front.jpg in Resources */,
+				A2863A6216E747030074354B /* Clock Tower.left.jpg in Resources */,
+				A2863A6316E747030074354B /* Clock Tower.right.jpg in Resources */,
+				A2863A6416E747030074354B /* Clock Tower.top.jpg in Resources */,
+				A2863A6816E749D70074354B /* ChesterStreet.m4a in Resources */,
+				A2863A7516E76F930074354B /* Nightlife.png in Resources */,
+				A2863A7616E76F930074354B /* Nightlife@2x.png in Resources */,
+				A2863A7716E76F930074354B /* Restaurants.png in Resources */,
+				A2863A7816E76F930074354B /* Restaurants@2x.png in Resources */,
+				A2863A7916E76F930074354B /* See & Do.png in Resources */,
+				A2863A7A16E76F930074354B /* See & Do@2x.png in Resources */,
+				A2863A7D16E76F930074354B /* University.png in Resources */,
+				A2863A7E16E76F930074354B /* University@2x.png in Resources */,
+				A2863A7F16E76F930074354B /* Welcome to Chester.png in Resources */,
+				A2863A8016E76F930074354B /* Welcome to Chester@2x.png in Resources */,
+				A2863A9416E7806D0074354B /* Chester360Icon.png in Resources */,
+				A2863A9616E780720074354B /* Chester360Icon@2x.png in Resources */,
+				A2863A9816E780880074354B /* Default.png in Resources */,
+				A2863A9A16E780A60074354B /* Default@2x.png in Resources */,
+				A2863A9C16E780B00074354B /* Default-568h@2x.png in Resources */,
+				A2CE910116E78F8400F7F0F9 /* ShoppingPage.png in Resources */,
+				A2CE910216E78F8400F7F0F9 /* ShoppingPage@2x.png in Resources */,
+				A24B1A4A16EA48C900B4E417 /* Shopping.png in Resources */,
+				A24B1A4B16EA48C900B4E417 /* Shopping@2x.png in Resources */,
+				A2E707DF19BCC2C400529787 /* 80.png in Resources */,
+				A2C0FC9C16F13A5F00BB9C37 /* Grosvenor Hotel.png in Resources */,
+				A2C0FC9D16F13A5F00BB9C37 /* Grosvenor Hotel@2x.png in Resources */,
+				A2C0FCA116F13A8500BB9C37 /* Tethering Stone.png in Resources */,
+				A2C0FCA216F13A8500BB9C37 /* Tethering Stone@2x.png in Resources */,
+				A2C0FCA616F13AAD00BB9C37 /* Memorial Cross.png in Resources */,
+				A2C0FCA716F13AAD00BB9C37 /* Memorial Cross@2x.png in Resources */,
+				A2C0FCAB16F13ADF00BB9C37 /* A Cellebration of Chester.png in Resources */,
+				A2C0FCAC16F13ADF00BB9C37 /* A Cellebration of Chester@2x.png in Resources */,
+				A2C0FCB416F1443500BB9C37 /* University.back.jpg in Resources */,
+				A2D1325119B3BC440097527D /* Ios7Background.png in Resources */,
+				A2C0FCB516F1443500BB9C37 /* University.bottom.jpg in Resources */,
+				A2C0FCB616F1443500BB9C37 /* University.front.jpg in Resources */,
+				A2C0FCB716F1443500BB9C37 /* University.left.jpg in Resources */,
+				A2C0FCB816F1443500BB9C37 /* University.right.jpg in Resources */,
+				A2C0FCB916F1443500BB9C37 /* University.top.jpg in Resources */,
+				A298FDE416F14AB7006FD210 /* Chester University.png in Resources */,
+				A298FDE516F14AB7006FD210 /* Chester University@2x.png in Resources */,
+				A298FDEC16F14D64006FD210 /* Binks Building.png in Resources */,
+				A298FDED16F14D64006FD210 /* Binks Building@2x.png in Resources */,
+				A2AAA855173ACFBF003E6E16 /* RaceCourse.back.jpg in Resources */,
+				A2AAA856173ACFBF003E6E16 /* RaceCourse.bottom.jpg in Resources */,
+				A2AAA857173ACFBF003E6E16 /* RaceCourse.front.jpg in Resources */,
+				A2AAA859173ACFBF003E6E16 /* RaceCourse.left.jpg in Resources */,
+				A2AAA85A173ACFBF003E6E16 /* RaceCourse.right.jpg in Resources */,
+				A2AAA85B173ACFBF003E6E16 /* RaceCourse.top.jpg in Resources */,
+				A2AAA863173AD167003E6E16 /* Cross.back.jpg in Resources */,
+				A2AAA864173AD167003E6E16 /* Cross.bottom.jpg in Resources */,
+				A2AAA865173AD167003E6E16 /* Cross.front.jpg in Resources */,
+				A2AAA867173AD167003E6E16 /* Cross.right.jpg in Resources */,
+				A2AAA868173AD167003E6E16 /* Cross.top.jpg in Resources */,
+				A2AAA86A173AD22C003E6E16 /* Cross.left.jpg in Resources */,
+				A2E707DE19BCC2C400529787 /* 58.png in Resources */,
+				A2AAA873173AD2B3003E6E16 /* RiversideBridge.back.jpg in Resources */,
+				A2AAA874173AD2B3003E6E16 /* RiversideBridge.bottom.jpg in Resources */,
+				A2AAA875173AD2B3003E6E16 /* RiversideBridge.front.jpg in Resources */,
+				A2AAA876173AD2B3003E6E16 /* RiversideBridge.left.jpg in Resources */,
+				A2AAA877173AD2B3003E6E16 /* RiversideBridge.right.jpg in Resources */,
+				A2AAA878173AD2B3003E6E16 /* RiversideBridge.top.jpg in Resources */,
+				A2D42564174E4C7A00F39B16 /* Riverside Bridge.png in Resources */,
+				A2D42565174E4C7A00F39B16 /* Riverside Bridge@2x.png in Resources */,
+				A2D4256C174E4C8E00F39B16 /* Chester Racecourse.png in Resources */,
+				A2D4256D174E4C8E00F39B16 /* Chester Racecourse@2x.png in Resources */,
+				A2D42570174E4D3900F39B16 /* Crossroads.png in Resources */,
+				A2D42571174E4D3900F39B16 /* Crossroads@2x.png in Resources */,
+				A2D42574174E576000F39B16 /* Roman Stone.png in Resources */,
+				A2D42575174E576000F39B16 /* Roman Stone@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A283510A16CE8D4100B61840 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A283511E16CE8D4100B61840 /* main.m in Sources */,
+				A283512216CE8D4100B61840 /* AppDelegate.m in Sources */,
+				A283514416CE93F000B61840 /* TabBarController.m in Sources */,
+				A283516016D2BEF000B61840 /* MapTabViewController.m in Sources */,
+				A283519716D2F33000B61840 /* WebsiteTabViewController.m in Sources */,
+				A283519A16D8221100B61840 /* Chester360NavigationController.m in Sources */,
+				A28351A016D827D500B61840 /* GuideViewController.m in Sources */,
+				A210245516DB9779008D2D9F /* WelcomeToChesterViewController.m in Sources */,
+				A210245816DBBB3A008D2D9F /* See&DoViewController.m in Sources */,
+				A210245E16DBC4E2008D2D9F /* SeeAndDoAttractionPageViewController.m in Sources */,
+				A28639DE16DD13A20074354B /* PanoramaViewController.m in Sources */,
+				A28639E216DD14B30074354B /* JAPanoView.m in Sources */,
+				A26CA05616EFA5E300EEFE4D /* PanoFeatureViewController.m in Sources */,
+				A2A94C071757E7FD006C29DE /* HowToUseViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A283511A16CE8D4100B61840 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A283511B16CE8D4100B61840 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A283512916CE8D4100B61840 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A283512A16CE8D4100B61840 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A283512F16CE8D4100B61840 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A283513016CE8D4100B61840 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A283513216CE8D4100B61840 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Chester360/Chester 360-Prefix.pch";
+				INFOPLIST_FILE = "Chester360/Chester 360-Info.plist";
+				PRODUCT_NAME = "Chester 360";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A283513316CE8D4100B61840 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Chester360/Chester 360-Prefix.pch";
+				INFOPLIST_FILE = "Chester360/Chester 360-Info.plist";
+				PRODUCT_NAME = "Chester 360";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A2CE910316E7B4A100F7F0F9 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Distribution;
+		};
+		A2CE910416E7B4A100F7F0F9 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Chester360/Chester 360-Prefix.pch";
+				INFOPLIST_FILE = "Chester360/Chester 360-Info.plist";
+				PRODUCT_NAME = "Chester 360";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Distribution;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A283510916CE8D4100B61840 /* Build configuration list for PBXProject "Chester 360" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A283512F16CE8D4100B61840 /* Debug */,
+				A283513016CE8D4100B61840 /* Release */,
+				A2CE910316E7B4A100F7F0F9 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A283513116CE8D4100B61840 /* Build configuration list for PBXNativeTarget "Chester 360" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A283513216CE8D4100B61840 /* Debug */,
+				A283513316CE8D4100B61840 /* Release */,
+				A2CE910416E7B4A100F7F0F9 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A283510616CE8D4100B61840 /* Project object */;
+}
