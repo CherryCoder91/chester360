@@ -1,0 +1,1277 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="AbX-Hl-ZfQ">
+    <dependencies>
+        <deployment defaultVersion="1552" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--Map-->
+        <scene sceneID="HmM-CS-R2m">
+            <objects>
+                <viewController id="fl8-of-WqG" userLabel="Map" customClass="MapTabViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="R5Y-Xm-GyF"/>
+                        <viewControllerLayoutGuide type="bottom" id="LkB-Ft-qhN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Gnf-pk-z5L">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wYj-h6-110">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <connections>
+                                    <outlet property="delegate" destination="fl8-of-WqG" id="H4M-ba-Bxe"/>
+                                </connections>
+                            </mapView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="blackTranslucent" translatesAutoresizingMaskIntoConstraints="NO" id="7Ux-PA-7zN">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" id="f07-PG-NJ4">
+                                        <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="X6E-LU-zB7">
+                                            <rect key="frame" x="16" y="7" width="185" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <segments>
+                                                <segment title="Map"/>
+                                                <segment title="Satellite"/>
+                                                <segment title="Hybrid"/>
+                                            </segments>
+                                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <action selector="ChangeMapStyle:" destination="fl8-of-WqG" eventType="valueChanged" id="bGs-Ly-j2I"/>
+                                            </connections>
+                                        </segmentedControl>
+                                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.3156035445" blue="0.35412513169999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="wYj-h6-110" firstAttribute="trailing" secondItem="Gnf-pk-z5L" secondAttribute="trailing" id="8bG-Kz-E4E"/>
+                            <constraint firstItem="7Ux-PA-7zN" firstAttribute="top" secondItem="Gnf-pk-z5L" secondAttribute="top" id="B11-9V-LYr"/>
+                            <constraint firstItem="wYj-h6-110" firstAttribute="bottom" secondItem="Gnf-pk-z5L" secondAttribute="bottom" id="DDA-Kz-z7I"/>
+                            <constraint firstItem="7Ux-PA-7zN" firstAttribute="leading" secondItem="Gnf-pk-z5L" secondAttribute="leading" id="Nbm-pv-Bjb"/>
+                            <constraint firstItem="7Ux-PA-7zN" firstAttribute="trailing" secondItem="Gnf-pk-z5L" secondAttribute="trailing" id="Qro-F1-4ng"/>
+                            <constraint firstItem="wYj-h6-110" firstAttribute="top" secondItem="Gnf-pk-z5L" secondAttribute="top" id="k4T-eE-a3d"/>
+                            <constraint firstItem="wYj-h6-110" firstAttribute="leading" secondItem="Gnf-pk-z5L" secondAttribute="leading" id="qX8-j3-cIp"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Map" image="Map.png" id="vwD-du-X7z"/>
+                    <navigationItem key="navigationItem" id="Cj6-jU-I3p"/>
+                    <connections>
+                        <outlet property="mapView" destination="wYj-h6-110" id="Tfk-8G-xpm"/>
+                        <segue destination="gJU-av-zgd" kind="push" identifier="map to panorama" id="389-h5-1QA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lF8-dm-gDz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="970" y="87"/>
+        </scene>
+        <!--Chester360 Navigation Controller - Guide-->
+        <scene sceneID="uoC-Nz-5vd">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="l2D-Aw-KxS" customClass="Chester360NavigationController" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Guide" image="Guide.png" id="MU8-fj-dSp"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="Fbc-o2-QeN">
+                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="0df-xV-0pQ">
+                        <rect key="frame" x="0.0" y="416" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="YEa-XA-Q2H" kind="relationship" relationship="rootViewController" id="eUS-kR-EOW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nrD-g7-zJL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="519" y="-557"/>
+        </scene>
+        <!--Guide View Controller - Chester 360-->
+        <scene sceneID="6bn-9e-KOg">
+            <objects>
+                <viewController id="YEa-XA-Q2H" customClass="GuideViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0VN-cO-c1z"/>
+                        <viewControllerLayoutGuide type="bottom" id="Lg1-db-0Or"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kMY-lh-HfR" customClass="Guide">
+                        <rect key="frame" x="0.0" y="44" width="320" height="436"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Welcome2.png" translatesAutoresizingMaskIntoConstraints="NO" id="7J8-yl-qRu">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="D1M-hG-ea4"/>
+                                </constraints>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Wh8-Hf-lmV">
+                                <rect key="frame" x="-2" y="160" width="323" height="178"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="chesterCell" textLabel="Y9U-xo-gcz" imageView="Mby-yh-g6f" rowHeight="57" style="IBUITableViewCellStyleDefault" id="RzB-W9-Vqg">
+                                        <rect key="frame" x="0.0" y="22" width="323" height="57"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RzB-W9-Vqg" id="85j-Cj-gWE">
+                                            <rect key="frame" x="0.0" y="0.0" width="290" height="56"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Y9U-xo-gcz">
+                                                    <rect key="frame" x="60" y="0.0" width="228" height="56"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="Guide.png" id="Mby-yh-g6f">
+                                                    <rect key="frame" x="15" y="13" width="30" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="YEa-XA-Q2H" id="bZp-L7-xP8"/>
+                                    <outlet property="delegate" destination="YEa-XA-Q2H" id="hgY-uT-NSq"/>
+                                </connections>
+                            </tableView>
+                            <adBannerView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UKG-5w-6cM">
+                                <rect key="frame" x="0.0" y="337" width="320" height="50"/>
+                            </adBannerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="UKG-5w-6cM" firstAttribute="leading" secondItem="kMY-lh-HfR" secondAttribute="leading" id="3i8-fc-Jng"/>
+                            <constraint firstItem="Wh8-Hf-lmV" firstAttribute="top" secondItem="7J8-yl-qRu" secondAttribute="bottom" id="A5f-5I-c9N"/>
+                            <constraint firstItem="Lg1-db-0Or" firstAttribute="top" secondItem="Wh8-Hf-lmV" secondAttribute="bottom" constant="49" id="PiZ-by-ddx"/>
+                            <constraint firstItem="Lg1-db-0Or" firstAttribute="top" secondItem="UKG-5w-6cM" secondAttribute="bottom" id="U8E-n5-RSA"/>
+                            <constraint firstItem="7J8-yl-qRu" firstAttribute="top" secondItem="0VN-cO-c1z" secondAttribute="bottom" id="VWY-ak-P4g"/>
+                            <constraint firstItem="7J8-yl-qRu" firstAttribute="leading" secondItem="kMY-lh-HfR" secondAttribute="leading" id="Whn-AV-TOW"/>
+                            <constraint firstItem="7J8-yl-qRu" firstAttribute="top" secondItem="kMY-lh-HfR" secondAttribute="top" id="XWp-lt-ihd"/>
+                            <constraint firstAttribute="trailing" secondItem="Wh8-Hf-lmV" secondAttribute="trailing" id="a1k-IQ-KCB"/>
+                            <constraint firstItem="Wh8-Hf-lmV" firstAttribute="leading" secondItem="kMY-lh-HfR" secondAttribute="leading" id="ifc-Lu-yMd"/>
+                            <constraint firstAttribute="trailing" secondItem="UKG-5w-6cM" secondAttribute="trailing" id="n0W-ib-9JM"/>
+                            <constraint firstAttribute="trailing" secondItem="7J8-yl-qRu" secondAttribute="trailing" id="srv-99-Awe"/>
+                            <constraint firstItem="7J8-yl-qRu" firstAttribute="top" secondItem="0VN-cO-c1z" secondAttribute="bottom" id="w1b-aB-gEk"/>
+                            <constraint firstItem="7J8-yl-qRu" firstAttribute="leading" secondItem="kMY-lh-HfR" secondAttribute="leading" id="wsm-9L-lC8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Chester 360" id="f73-7m-7t2"/>
+                    <connections>
+                        <outlet property="Chester360TableView" destination="Wh8-Hf-lmV" id="CXR-LR-wz2"/>
+                        <outlet property="myAddView" destination="UKG-5w-6cM" id="IxD-TX-Yve"/>
+                        <segue destination="vzC-oA-lql" kind="push" identifier="WelcomeToChesterSegue" id="Fa7-kH-jmo"/>
+                        <segue destination="KD7-md-YeI" kind="push" identifier="See&amp;DoSegue" id="lnZ-ed-nS5"/>
+                        <segue destination="rdF-bH-vGG" kind="push" identifier="ShoppingSegue" id="qQM-Pj-05s"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x9P-Dz-zP8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="970" y="-621"/>
+        </scene>
+        <!--See Do View Controller - See & Do-->
+        <scene sceneID="Heq-Pz-5kJ">
+            <objects>
+                <viewController id="KD7-md-YeI" customClass="See_DoViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rrI-od-5tt"/>
+                        <viewControllerLayoutGuide type="bottom" id="4kC-0Y-khs"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SQN-Qi-Jru">
+                        <rect key="frame" x="0.0" y="44" width="320" height="436"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="69" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="gq7-0R-8jB">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="436"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="See&amp;DoCell" textLabel="qZU-c4-jiT" detailTextLabel="l2r-zL-d5Z" imageView="HME-In-RDL" rowHeight="69" style="IBUITableViewCellStyleSubtitle" id="Z0k-h2-6CJ">
+                                        <rect key="frame" x="0.0" y="22" width="320" height="69"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Z0k-h2-6CJ" id="hTz-82-pYj">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="68"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qZU-c4-jiT">
+                                                    <rect key="frame" x="60" y="15" width="36" height="22"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="l2r-zL-d5Z">
+                                                    <rect key="frame" x="60" y="37" width="50" height="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="Guide.png" id="HME-In-RDL">
+                                                    <rect key="frame" x="15" y="19" width="30" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="KD7-md-YeI" id="hRB-le-63F"/>
+                                    <outlet property="delegate" destination="KD7-md-YeI" id="ZJ7-P3-MyB"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="gq7-0R-8jB" secondAttribute="bottom" id="S11-HK-fTB"/>
+                            <constraint firstItem="gq7-0R-8jB" firstAttribute="leading" secondItem="SQN-Qi-Jru" secondAttribute="leading" constant="-13" id="bnS-JA-PO9"/>
+                            <constraint firstAttribute="trailing" secondItem="gq7-0R-8jB" secondAttribute="trailing" id="iig-Gg-sop"/>
+                            <constraint firstItem="gq7-0R-8jB" firstAttribute="top" secondItem="rrI-od-5tt" secondAttribute="bottom" id="zj8-6b-1aF"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="See &amp; Do" id="fPX-Gp-i8z"/>
+                    <connections>
+                        <segue destination="vqX-SO-5la" kind="push" identifier="SeeAndDoAttractionPageSegue" id="I5L-Kk-AeV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tak-pl-Qfv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1521" y="-601"/>
+        </scene>
+        <!--Navigation Controller - Map-->
+        <scene sceneID="cVD-1y-vdF">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="MUd-bw-keD" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Map" image="Map.png" id="jLa-s6-Yxc"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="iWK-fR-G2F">
+                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="5Qd-jQ-mP6">
+                        <rect key="frame" x="0.0" y="436" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="fl8-of-WqG" kind="relationship" relationship="rootViewController" id="EEI-8p-WhI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mA7-iu-0yD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="519" y="87"/>
+        </scene>
+        <!--See And Do Attraction Page View Controller-->
+        <scene sceneID="FMb-er-kwg">
+            <objects>
+                <viewController storyboardIdentifier="SeeAndDoAtractionPageViewController" id="vqX-SO-5la" customClass="SeeAndDoAttractionPageViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jTa-te-wts"/>
+                        <viewControllerLayoutGuide type="bottom" id="vbD-CD-4fn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hTK-Av-JoO">
+                        <rect key="frame" x="0.0" y="44" width="320" height="436"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h9D-Oh-1fR">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="436"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ASt-jQ-64r">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="176"/>
+                                    </imageView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" ambiguous="YES" misplaced="YES" text="AttractionTitleLabel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gcS-9P-XHU">
+                                        <rect key="frame" x="8" y="181" width="321" height="23"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I1P-pd-nhu">
+                                        <rect key="frame" x="9" y="231" width="301" height="200"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YML-aN-xA2">
+                                        <rect key="frame" x="246" y="138" width="64" height="66"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="66" id="Ft9-he-H5m"/>
+                                            <constraint firstAttribute="width" constant="64" id="XAj-3I-Xtd"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" size="button"/>
+                                        <state key="normal" image="CameraIcon.png">
+                                            <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="callPanorama:" destination="vqX-SO-5la" eventType="touchUpInside" id="HGQ-jN-jZL"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" ambiguous="YES" misplaced="YES" text="AttractionSubtitleLabel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gXt-YY-zdH">
+                                        <rect key="frame" x="10" y="202" width="320" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="320" id="Z1x-Fo-twO"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" ambiguous="YES" misplaced="YES" text="360*" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lip-w7-HqU">
+                                        <rect key="frame" x="263" y="202" width="35" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="gXt-YY-zdH" firstAttribute="top" secondItem="lip-w7-HqU" secondAttribute="top" id="2hX-gA-m8j"/>
+                                    <constraint firstItem="lip-w7-HqU" firstAttribute="baseline" secondItem="gXt-YY-zdH" secondAttribute="baseline" id="CcZ-SU-0hx"/>
+                                    <constraint firstItem="gXt-YY-zdH" firstAttribute="top" secondItem="ASt-jQ-64r" secondAttribute="bottom" constant="26" id="LBc-ma-Iv6"/>
+                                    <constraint firstItem="I1P-pd-nhu" firstAttribute="top" secondItem="lip-w7-HqU" secondAttribute="bottom" constant="8" id="QT4-IU-PUI"/>
+                                    <constraint firstItem="I1P-pd-nhu" firstAttribute="leading" secondItem="h9D-Oh-1fR" secondAttribute="leading" constant="9" id="RJx-oa-QVF"/>
+                                    <constraint firstAttribute="bottom" secondItem="I1P-pd-nhu" secondAttribute="bottom" constant="2" id="U0o-32-H4F"/>
+                                    <constraint firstAttribute="trailing" secondItem="I1P-pd-nhu" secondAttribute="trailing" constant="10" id="oXv-QK-JAI"/>
+                                    <constraint firstItem="gcS-9P-XHU" firstAttribute="top" secondItem="ASt-jQ-64r" secondAttribute="bottom" constant="5" id="xni-MP-gAC"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="h9D-Oh-1fR" firstAttribute="top" secondItem="jTa-te-wts" secondAttribute="bottom" id="9hH-Eo-VHp"/>
+                            <constraint firstItem="h9D-Oh-1fR" firstAttribute="leading" secondItem="hTK-Av-JoO" secondAttribute="leading" id="ir6-UX-6Hr"/>
+                            <constraint firstAttribute="trailing" secondItem="h9D-Oh-1fR" secondAttribute="trailing" id="vfX-7b-ebb"/>
+                            <constraint firstAttribute="bottom" secondItem="h9D-Oh-1fR" secondAttribute="bottom" id="w46-2s-fqJ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="MqH-hv-Kt7"/>
+                    <connections>
+                        <outlet property="attraction360Button" destination="YML-aN-xA2" id="LoQ-lV-9CI"/>
+                        <outlet property="attractionImage" destination="ASt-jQ-64r" id="tSM-v5-mi0"/>
+                        <outlet property="attractionSubtitleLabel" destination="gXt-YY-zdH" id="Kkg-Gq-gsk"/>
+                        <outlet property="attractionTextView" destination="I1P-pd-nhu" id="aQ7-Bb-Z1g"/>
+                        <outlet property="attractionTitleLabel" destination="gcS-9P-XHU" id="mYf-He-HZ4"/>
+                        <outlet property="myUIScrollView" destination="h9D-Oh-1fR" id="FwM-eV-8Dl"/>
+                        <segue destination="gJU-av-zgd" kind="push" identifier="Load Panorama" id="ugn-8M-xdT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CRa-CC-QJq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1996" y="-601"/>
+        </scene>
+        <!--Panorama View Controller-->
+        <scene sceneID="HB2-Zq-1ao">
+            <objects>
+                <viewController id="gJU-av-zgd" customClass="PanoramaViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tqM-CK-YFb"/>
+                        <viewControllerLayoutGuide type="bottom" id="NBo-az-Mzt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MC4-lh-5jf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="BV0-uP-fAF"/>
+                    <connections>
+                        <segue destination="hDe-xM-DCz" kind="push" identifier="panofeaturesegue" id="YqP-9y-ZVo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="od6-Mw-NaC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2535" y="81"/>
+        </scene>
+        <!--Pano Feature View Controller-->
+        <scene sceneID="Etf-BX-r4B">
+            <objects>
+                <viewController storyboardIdentifier="letswork" id="hDe-xM-DCz" customClass="PanoFeatureViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="V5W-GF-xRA"/>
+                        <viewControllerLayoutGuide type="bottom" id="cnf-pi-ePR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9Xz-3z-woF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LND-E6-5Sp">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="176"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="176" id="25a-Up-OIz"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ICE-Bd-QFA">
+                                <rect key="frame" x="8" y="184" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t2t-EV-9Qr">
+                                <rect key="frame" x="8" y="213" width="302" height="267"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="302" id="0vD-Tf-BjU"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LND-E6-5Sp" firstAttribute="top" secondItem="9Xz-3z-woF" secondAttribute="top" id="3RO-fa-zhU"/>
+                            <constraint firstItem="ICE-Bd-QFA" firstAttribute="top" secondItem="LND-E6-5Sp" secondAttribute="bottom" constant="8" symbolic="YES" id="N52-P0-Ta8"/>
+                            <constraint firstItem="t2t-EV-9Qr" firstAttribute="bottom" secondItem="9Xz-3z-woF" secondAttribute="bottom" id="aYW-QE-0AR"/>
+                            <constraint firstItem="LND-E6-5Sp" firstAttribute="leading" secondItem="9Xz-3z-woF" secondAttribute="leading" id="bBg-PQ-Tw6"/>
+                            <constraint firstItem="LND-E6-5Sp" firstAttribute="trailing" secondItem="9Xz-3z-woF" secondAttribute="trailing" id="beB-wt-jUY"/>
+                            <constraint firstItem="ICE-Bd-QFA" firstAttribute="leading" secondItem="t2t-EV-9Qr" secondAttribute="leading" id="h3p-lh-ple"/>
+                            <constraint firstItem="t2t-EV-9Qr" firstAttribute="top" secondItem="ICE-Bd-QFA" secondAttribute="bottom" constant="8" symbolic="YES" id="mPJ-zW-9aX"/>
+                            <constraint firstItem="ICE-Bd-QFA" firstAttribute="leading" secondItem="9Xz-3z-woF" secondAttribute="leading" constant="8" id="mvF-fW-stO"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="4Na-Vw-cIW"/>
+                    <connections>
+                        <outlet property="featureImage" destination="LND-E6-5Sp" id="Z5X-cA-Ngs"/>
+                        <outlet property="featureText" destination="t2t-EV-9Qr" id="Opa-rV-eaH"/>
+                        <outlet property="featureTitle" destination="ICE-Bd-QFA" id="wGJ-DU-9Co"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u6H-Kz-tAB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2999" y="81"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="uLe-c7-1pe">
+            <objects>
+                <viewController id="rdF-bH-vGG" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vUP-Wr-IPh"/>
+                        <viewControllerLayoutGuide type="bottom" id="pbc-HC-37C"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vMn-4h-R7m">
+                        <rect key="frame" x="0.0" y="44" width="320" height="524"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" image="ShoppingPage.png" translatesAutoresizingMaskIntoConstraints="NO" id="fMx-uK-5oL">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="172"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" misplaced="YES" text="Shopping in Chester" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NIq-FW-BS3">
+                                <rect key="frame" x="10" y="180" width="157" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GNK-gg-1ys">
+                                <rect key="frame" x="10" y="209" width="297" height="265"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">Chester and Cheshire is the place to come if you love a great shopping experience.
+
+Charm and tradition are partnered with the latest designer stores and boutiques selling the best names in fashion, big names you know and love, and a wealth of independent specialist shops selling items from the mainstream to the quirky and different.
+
+Whatever your preference, modern shopping malls and outlet stores, or quaint cobbled streets home to beautiful buildings housing fabulous shops, high-end high-fashion or a surprise bargain, you’ll find it all in Chester and Cheshire.
+
+In the city there are the wonderful Chester rows supplemented with the Grosvenor Shopping Centre. Just outside the city is home the Cheshire Oaks shopping outlet village. 
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fMx-uK-5oL" firstAttribute="top" secondItem="vUP-Wr-IPh" secondAttribute="bottom" id="6AD-qR-dtN"/>
+                            <constraint firstItem="fMx-uK-5oL" firstAttribute="leading" secondItem="vMn-4h-R7m" secondAttribute="leading" id="7GF-yF-9Dd"/>
+                            <constraint firstItem="pbc-HC-37C" firstAttribute="top" secondItem="GNK-gg-1ys" secondAttribute="bottom" constant="1" id="GkF-lR-BMn"/>
+                            <constraint firstAttribute="trailing" secondItem="NIq-FW-BS3" secondAttribute="trailing" constant="153" id="Rbb-J9-dfk"/>
+                            <constraint firstItem="GNK-gg-1ys" firstAttribute="top" secondItem="NIq-FW-BS3" secondAttribute="bottom" constant="8" id="Zhk-mt-UiQ"/>
+                            <constraint firstAttribute="trailing" secondItem="GNK-gg-1ys" secondAttribute="trailing" constant="10" id="bED-c0-pWs"/>
+                            <constraint firstItem="NIq-FW-BS3" firstAttribute="top" secondItem="fMx-uK-5oL" secondAttribute="bottom" constant="8" id="gaq-pD-lpV"/>
+                            <constraint firstItem="NIq-FW-BS3" firstAttribute="leading" secondItem="vMn-4h-R7m" secondAttribute="leading" constant="10" id="rE9-gu-2AD"/>
+                            <constraint firstItem="GNK-gg-1ys" firstAttribute="leading" secondItem="vMn-4h-R7m" secondAttribute="leading" constant="10" id="vUD-WW-eeu"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="XrB-pi-ccQ"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nDq-gz-eX9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1521" y="-1919"/>
+        </scene>
+        <!--Welcome To Chester View Controller - Welcome To Chester-->
+        <scene sceneID="25t-PN-hue">
+            <objects>
+                <viewController id="vzC-oA-lql" customClass="WelcomeToChesterViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fs9-gv-eMW"/>
+                        <viewControllerLayoutGuide type="bottom" id="tl3-EA-lzO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8Pc-k1-qOD">
+                        <rect key="frame" x="0.0" y="44" width="320" height="524"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xvv-l3-c3G">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="473"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" ambiguous="YES" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qQL-k6-WmQ">
+                                        <rect key="frame" x="14" y="163" width="230" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="230" id="AGU-rt-OKy"/>
+                                            <constraint firstAttribute="height" constant="21" id="aOn-hy-mtj"/>
+                                        </constraints>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Welcome to Chester...">
+                                                <attributes>
+                                                    <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <font key="NSFont" size="18" name="Helvetica"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" image="Welcome.png" translatesAutoresizingMaskIntoConstraints="NO" id="Spy-lQ-RpT">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KGu-aU-R20">
+                                        <rect key="frame" x="14" y="192" width="291" height="281"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <attributedString key="attributedText">
+                                            <fragment>
+                                                <string key="content">Chester is a city in Cheshire, England and lies on the river Dee close to the border with Wales. It was first granted city status in 1541 and has a rich heritage with medieval buildings and is one of the best preserved walled cities in Britain.
+
+Chester also holds a great deal of modern influence with a rich and vibrant shopping center and many local attractions such as Chester Zoo and Blue planet Aquarium. 
+
+In the summer people flock to Chester Racecourse to watch the spectacle of horseracing and to join in with the spirit of the city. At night the Racecourse is often opened up as a venue for events and music concerts for all to watch.
+
+
+</string>
+                                                <attributes>
+                                                    <font key="NSFont" size="14" name="ArialMT"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tailIndent="432" defaultTabInterval="36">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="Population">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="14" name="Arial-BoldMT"/>
+                                                    <url key="NSLink">
+                                                        <string key="string">https://www.google.co.uk/search?hl=en&amp;biw=1552&amp;bih=1272&amp;q=www.cheshirewestandchester.gov.uk+population&amp;sa=X&amp;ei=iXArUZTMFu2S0QX1yoCYCw&amp;ved=0CJ8BEOgTKAE</string>
+                                                    </url>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tailIndent="432" minimumLineHeight="12" defaultTabInterval="36">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <integer key="NSUnderline" value="1"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=": ">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="14" name="Arial-BoldMT"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tailIndent="432" minimumLineHeight="12" defaultTabInterval="36">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">77,040 (2001)
+
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="14" name="ArialMT"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tailIndent="432" minimumLineHeight="12" defaultTabInterval="36">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="Currency">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="14" name="Arial-BoldMT"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tailIndent="432" minimumLineHeight="12" defaultTabInterval="36">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <integer key="NSUnderline" value="1"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=": ">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="14" name="Arial-BoldMT"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tailIndent="432" minimumLineHeight="12" defaultTabInterval="36">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">GBP 
+
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="14" name="ArialMT"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tailIndent="432" minimumLineHeight="12" defaultTabInterval="36">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="Local Transport">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="14" name="Arial-BoldMT"/>
+                                                    <url key="NSLink">
+                                                        <string key="string">https://www.google.co.uk/search?hl=en&amp;biw=1552&amp;bih=1272&amp;q=www.cheshirewestandchester.gov.uk+population&amp;sa=X&amp;ei=iXArUZTMFu2S0QX1yoCYCw&amp;ved=0CJ8BEOgTKAE</string>
+                                                    </url>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tailIndent="432" minimumLineHeight="12" defaultTabInterval="36">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <integer key="NSUnderline" value="1"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=": ">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="14" name="Arial-BoldMT"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tailIndent="432" minimumLineHeight="12" defaultTabInterval="36">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">Train, Taxi
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="14" name="ArialMT"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tailIndent="432" minimumLineHeight="12" defaultTabInterval="36">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="14" name="Arial-BoldMT"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tailIndent="432" minimumLineHeight="12" defaultTabInterval="36">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="Emergency Number">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="14" name="Arial-BoldMT"/>
+                                                    <url key="NSLink">
+                                                        <string key="string">https://www.google.co.uk/search?hl=en&amp;biw=1552&amp;bih=1272&amp;q=www.cheshirewestandchester.gov.uk+population&amp;sa=X&amp;ei=iXArUZTMFu2S0QX1yoCYCw&amp;ved=0CJ8BEOgTKAE</string>
+                                                    </url>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tailIndent="432" minimumLineHeight="12" defaultTabInterval="36">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                    <integer key="NSUnderline" value="1"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=": ">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="14" name="Arial-BoldMT"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tailIndent="432" minimumLineHeight="12" defaultTabInterval="36">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment>
+                                                <string key="content">999
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <font key="NSFont" size="14" name="ArialMT"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tailIndent="432" minimumLineHeight="12" defaultTabInterval="36">
+                                                        <tabStops/>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="KGu-aU-R20" firstAttribute="top" secondItem="qQL-k6-WmQ" secondAttribute="bottom" constant="8" id="29e-8U-SSA"/>
+                                    <constraint firstItem="qQL-k6-WmQ" firstAttribute="top" secondItem="Spy-lQ-RpT" secondAttribute="bottom" constant="13" id="5Db-2m-cF6"/>
+                                    <constraint firstItem="qQL-k6-WmQ" firstAttribute="top" secondItem="Spy-lQ-RpT" secondAttribute="bottom" constant="13" id="6Sh-YT-rXN"/>
+                                    <constraint firstAttribute="trailing" secondItem="KGu-aU-R20" secondAttribute="trailing" constant="10" id="92r-Df-2UZ"/>
+                                    <constraint firstItem="KGu-aU-R20" firstAttribute="leading" secondItem="xvv-l3-c3G" secondAttribute="leading" constant="10" id="9mH-Sv-O4d"/>
+                                    <constraint firstAttribute="bottom" secondItem="KGu-aU-R20" secondAttribute="bottom" id="EFC-Wd-8mF"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.9960784912109375" green="0.99215692281723022" blue="0.99215692281723022" alpha="1" colorSpace="deviceRGB"/>
+                        <constraints>
+                            <constraint firstItem="xvv-l3-c3G" firstAttribute="top" secondItem="fs9-gv-eMW" secondAttribute="bottom" id="Dnp-W4-GY0"/>
+                            <constraint firstAttribute="trailing" secondItem="xvv-l3-c3G" secondAttribute="trailing" id="GBn-VC-mCq"/>
+                            <constraint firstItem="xvv-l3-c3G" firstAttribute="leading" secondItem="8Pc-k1-qOD" secondAttribute="leading" id="mrx-Ds-17F"/>
+                            <constraint firstItem="tl3-EA-lzO" firstAttribute="top" secondItem="xvv-l3-c3G" secondAttribute="bottom" constant="2" id="tPD-RK-tcX"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Welcome To Chester" id="VaH-0l-m6u"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="scroller" destination="xvv-l3-c3G" id="ofN-sw-xp0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="im6-fv-bxm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1521" y="-1253"/>
+        </scene>
+        <!--Website-->
+        <scene sceneID="8F3-BQ-Out">
+            <objects>
+                <viewController id="tqA-v7-vmF" userLabel="Website" customClass="WebsiteTabViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HeR-8t-rPZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="6YW-yc-HPJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ViY-gD-vU9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Ios7Background.png" translatesAutoresizingMaskIntoConstraints="NO" id="SfQ-y6-pRA">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <webView multipleTouchEnabled="YES" contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1cS-FM-8a9">
+                                <rect key="frame" x="0.0" y="94" width="320" height="386"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" address="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="tqA-v7-vmF" id="civ-Sa-C1q"/>
+                                </connections>
+                            </webView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9fp-Nc-nid">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <items>
+                                    <barButtonItem title="Go Back" id="npA-gX-yG1">
+                                        <connections>
+                                            <action selector="goBack" destination="1cS-FM-8a9" id="PNN-0C-vSL"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="refresh" id="IJq-BF-d5d">
+                                        <connections>
+                                            <action selector="reload" destination="1cS-FM-8a9" id="GxS-02-gCB"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" misplaced="YES" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="tiM-qf-gfR">
+                                <rect key="frame" x="142" y="221" width="37" height="37"/>
+                                <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
+                            <adBannerView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="Qu2-aX-IvL">
+                                <rect key="frame" x="0.0" y="44" width="320" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="GWw-8W-ota"/>
+                                </constraints>
+                            </adBannerView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99607849120000003" green="0.99215692280000001" blue="0.99215692280000001" alpha="1" colorSpace="deviceRGB"/>
+                        <constraints>
+                            <constraint firstItem="Qu2-aX-IvL" firstAttribute="top" secondItem="9fp-Nc-nid" secondAttribute="bottom" id="49R-OZ-0t4"/>
+                            <constraint firstItem="1cS-FM-8a9" firstAttribute="top" secondItem="Qu2-aX-IvL" secondAttribute="bottom" id="Hpi-n0-Pht"/>
+                            <constraint firstItem="9fp-Nc-nid" firstAttribute="top" secondItem="ViY-gD-vU9" secondAttribute="top" id="JpX-tI-KqR"/>
+                            <constraint firstItem="Qu2-aX-IvL" firstAttribute="centerX" secondItem="tiM-qf-gfR" secondAttribute="centerX" id="KRr-Qf-7w6"/>
+                            <constraint firstItem="1cS-FM-8a9" firstAttribute="leading" secondItem="ViY-gD-vU9" secondAttribute="leading" id="NRq-hj-UeC"/>
+                            <constraint firstItem="9fp-Nc-nid" firstAttribute="trailing" secondItem="ViY-gD-vU9" secondAttribute="trailing" id="Pbk-0M-WlI"/>
+                            <constraint firstItem="1cS-FM-8a9" firstAttribute="trailing" secondItem="ViY-gD-vU9" secondAttribute="trailing" id="Xq7-zL-GfR"/>
+                            <constraint firstItem="Qu2-aX-IvL" firstAttribute="leading" secondItem="ViY-gD-vU9" secondAttribute="leading" id="o7R-RT-YVD"/>
+                            <constraint firstItem="Qu2-aX-IvL" firstAttribute="trailing" secondItem="ViY-gD-vU9" secondAttribute="trailing" id="rAK-Ks-VmI"/>
+                            <constraint firstItem="tiM-qf-gfR" firstAttribute="centerY" secondItem="ViY-gD-vU9" secondAttribute="centerY" id="rYV-dl-yxp"/>
+                            <constraint firstItem="9fp-Nc-nid" firstAttribute="leading" secondItem="ViY-gD-vU9" secondAttribute="leading" id="rhG-Sy-Vb3"/>
+                            <constraint firstItem="1cS-FM-8a9" firstAttribute="bottom" secondItem="ViY-gD-vU9" secondAttribute="bottom" id="vSv-dB-ZiD"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Website" image="Website.png" id="3BQ-cS-ih1"/>
+                    <connections>
+                        <outlet property="WebsiteiADBanner" destination="Qu2-aX-IvL" id="ZTl-To-Brx"/>
+                        <outlet property="activityIndicator" destination="tiM-qf-gfR" id="GB8-ak-qQM"/>
+                        <outlet property="webView" destination="1cS-FM-8a9" id="pyo-s8-z1h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fuf-9M-DyU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="519" y="798"/>
+        </scene>
+        <!--How to Use-->
+        <scene sceneID="S59-fK-lco">
+            <objects>
+                <viewController id="sm2-cr-seM" userLabel="How to Use" customClass="HowToUseViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lre-dz-gc1"/>
+                        <viewControllerLayoutGuide type="bottom" id="cND-4p-asr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="H70-Kc-Ics">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Ios7Background.png" translatesAutoresizingMaskIntoConstraints="NO" id="YO7-R6-IeC">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4bQ-T2-dAL">
+                                <rect key="frame" x="4" y="51" width="313" height="429"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="How To Use:">
+                                        <attributes>
+                                            <font key="NSFont" size="15" name="Helvetica-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="18" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="15" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="18" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="8" name="Tahoma"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="18" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="15" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="18" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="8" name="Tahoma"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="18" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">This app will guide you through the attractions within Chester one of the most beautiful cities in the North West of England. The app comes with 360 Degree Virtual Panoramas that allow you to imagine what it would be like if you were stood within Chester. The phone’s gyroscope (</string>
+                                        <attributes>
+                                            <font key="NSFont" size="15" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="18" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="iPhone 4+)">
+                                        <attributes>
+                                            <font key="NSFont" size="15" name="Helvetica-Oblique"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="18" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" allows you to look straight through the phone as you turn!   ">
+                                        <attributes>
+                                            <font key="NSFont" size="15" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="18" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="8" name="Tahoma"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="18" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">To Use the App either use the Guide tab to navigate through the attractions to reveal information about the attraction or for a more interactive experience you can use the map tab to see a map of Chester, which shows the locations of the attractions. Clicking on the pins will allow you to see the attractions name and from there you can jump straight into an interactive panorama.  </string>
+                                        <attributes>
+                                            <font key="NSFont" size="15" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="18" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="8" name="Tahoma"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="18" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="   ">
+                                        <attributes>
+                                            <font key="NSFont" size="15" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="18" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="8" name="Tahoma"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="18" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="About:">
+                                        <attributes>
+                                            <font key="NSFont" size="15" name="Helvetica-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="18" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="15" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="18" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="8" name="Tahoma"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="18" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="15" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="18" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="8" name="Tahoma"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="18" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="App’s Author:  ">
+                                        <attributes>
+                                            <font key="NSFont" size="15" name="Helvetica-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="18" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="James Pickup ">
+                                        <attributes>
+                                            <font key="NSFont" size="15" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="18" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="8" name="Tahoma"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="18" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Authors Website: ">
+                                        <attributes>
+                                            <font key="NSFont" size="15" name="Helvetica-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="18" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="www.creativeabyss.co.uk">
+                                        <attributes>
+                                            <color key="NSColor" red="0.1803921568627451" green="0.45490196078431372" blue="0.70980392156862748" alpha="1" colorSpace="deviceRGB"/>
+                                            <font key="NSFont" size="15" name="Helvetica"/>
+                                            <url key="NSLink" string="http://www.creativeabyss.co.uk/"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="18" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="15" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="18" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="8" name="Tahoma"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="18" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Email:">
+                                        <attributes>
+                                            <font key="NSFont" size="15" name="Helvetica-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="18" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="15" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="18" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="JamesPickup@me.com">
+                                        <attributes>
+                                            <color key="NSColor" red="0.1803921568627451" green="0.45490196078431372" blue="0.70980392156862748" alpha="1" colorSpace="deviceRGB"/>
+                                            <font key="NSFont" size="15" name="Helvetica"/>
+                                            <url key="NSLink" string="mailto:JamesPickup@me.com"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="18" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="15" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="18" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="8" name="Tahoma"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="18" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="15" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="18" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="8" name="Tahoma"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="18" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">This application is not currently actively supported and no future updates / bug fixes are guaranteed. It is however possible that from time to time small updates may occur.    </string>
+                                        <attributes>
+                                            <font key="NSFont" size="15" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="18" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="8" name="Tahoma"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="18" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Note:">
+                                        <attributes>
+                                            <font key="NSFont" size="15" name="Helvetica-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="18" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" The website tab loads the website ‘visit Chester’ and is not hosted as part of the authors app but rather loads the website: ">
+                                        <attributes>
+                                            <font key="NSFont" size="15" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="18" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="www.visitchester.com">
+                                        <attributes>
+                                            <color key="NSColor" red="0.1803921568627451" green="0.45490196078431372" blue="0.70980392156862748" alpha="1" colorSpace="deviceRGB"/>
+                                            <font key="NSFont" size="15" name="Helvetica"/>
+                                            <url key="NSLink" string="http://www.visitchester.com/"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="18" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=". The author of the aforementioned site is responsible for the content shown within this tab.    ">
+                                        <attributes>
+                                            <font key="NSFont" size="15" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="18" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="8" name="Tahoma"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="18" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="15" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="18" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="8" name="Tahoma"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="18" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
+                            <adBannerView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iSW-ke-Ae7">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                            </adBannerView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="YO7-R6-IeC" firstAttribute="top" secondItem="lre-dz-gc1" secondAttribute="bottom" id="3Lw-Qi-kwR"/>
+                            <constraint firstAttribute="trailing" secondItem="iSW-ke-Ae7" secondAttribute="trailing" id="3zP-Kg-96O"/>
+                            <constraint firstItem="iSW-ke-Ae7" firstAttribute="top" secondItem="lre-dz-gc1" secondAttribute="bottom" id="9yd-Mk-VR8"/>
+                            <constraint firstItem="4bQ-T2-dAL" firstAttribute="top" secondItem="iSW-ke-Ae7" secondAttribute="bottom" constant="1" id="Aec-Wg-FVC"/>
+                            <constraint firstItem="iSW-ke-Ae7" firstAttribute="leading" secondItem="H70-Kc-Ics" secondAttribute="leading" id="Iqu-C7-U2c"/>
+                            <constraint firstItem="4bQ-T2-dAL" firstAttribute="leading" secondItem="H70-Kc-Ics" secondAttribute="leading" constant="4" id="YZe-a5-Msg"/>
+                            <constraint firstAttribute="trailing" secondItem="4bQ-T2-dAL" secondAttribute="trailing" constant="3" id="cbK-6o-9pL"/>
+                            <constraint firstAttribute="bottom" secondItem="4bQ-T2-dAL" secondAttribute="bottom" id="hGW-y2-4SF"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="How to Use" image="Info.png" id="sxP-Fr-DKH"/>
+                    <connections>
+                        <outlet property="GuideiADBannerView" destination="iSW-ke-Ae7" id="2xG-43-CAZ"/>
+                        <outlet property="howToUseView" destination="4bQ-T2-dAL" id="uaZ-oA-gtQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gDI-PY-Hgn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="519" y="1488"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="qnc-85-V2z">
+            <objects>
+                <tabBarController definesPresentationContext="YES" id="AbX-Hl-ZfQ" customClass="TabBarController" sceneMemberID="viewController">
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="3YP-u4-tEg">
+                        <rect key="frame" x="129" y="330" width="163" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="l2D-Aw-KxS" kind="relationship" relationship="viewControllers" id="qMP-qC-20C"/>
+                        <segue destination="MUd-bw-keD" kind="relationship" relationship="viewControllers" id="OPK-Mz-WOG"/>
+                        <segue destination="tqA-v7-vmF" kind="relationship" relationship="viewControllers" id="Ztf-ys-cRf"/>
+                        <segue destination="sm2-cr-seM" kind="relationship" relationship="viewControllers" id="MNK-Wh-C3H"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z4s-0j-r0g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-170" y="346"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="CameraIcon.png" width="320" height="320"/>
+        <image name="Guide.png" width="30" height="30"/>
+        <image name="Info.png" width="30" height="30"/>
+        <image name="Ios7Background.png" width="640" height="1136"/>
+        <image name="Map.png" width="30" height="30"/>
+        <image name="ShoppingPage.png" width="320" height="165"/>
+        <image name="Website.png" width="30" height="30"/>
+        <image name="Welcome.png" width="320" height="165"/>
+        <image name="Welcome2.png" width="320" height="165"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="389-h5-1QA"/>
+    </inferredMetricsTieBreakers>
+</document>

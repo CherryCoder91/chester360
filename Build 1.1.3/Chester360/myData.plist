@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>Town Hall</string>
+		<key>subtitle</key>
+		<string>The Cities Town Hall</string>
+		<key>details</key>
+		<string>The hall is built in banded pink and buff sandstone with a grey-green slate roof. The building is nearly symmetrical, in ten bays, and in the Gothic Revival style, applying features of late 13th-century Gothic architecture to a modern use. Above the central two bays is a tower, which terminates with gables and a short diagonal spire. The spire rises to a height of 160 feet (49 m). The building has a semi-basement, two main storeys and a dormer attic. The entrance is approached by two opposed flights of steps. Above the porch are four sculptures in Bath stone depicting episodes from the history of the city.
+
+The Town Hall was completed in 1869 and was opened on 15 October of that year by the Prince of Wales, later King Edward VII. English Heritage has designated it as a Grade II listed building.
+</string>
+		<key>table icon</key>
+		<string>Town Hall.png</string>
+		<key>front image</key>
+		<string>Town Hall.front.jpg</string>
+		<key>right image</key>
+		<string>Town Hall.right.jpg</string>
+		<key>left image</key>
+		<string>Town Hall.left.jpg</string>
+		<key>back image</key>
+		<string>Town Hall.back.jpg</string>
+		<key>up image</key>
+		<string>Town Hall.top.jpg</string>
+		<key>down image</key>
+		<string>Town Hall.bottom.jpg</string>
+		<key>latitude</key>
+		<string>53.191707</string>
+		<key>longitude</key>
+		<string>-2.892119</string>
+		<key>labelx</key>
+		<string>250</string>
+		<key>labely</key>
+		<string>0</string>
+		<key>labelcubeface</key>
+		<string>left</string>
+		<key>buttontitle</key>
+		<string>Statue</string>
+		<key>buttonx</key>
+		<string>0</string>
+		<key>buttony</key>
+		<string>200</string>
+		<key>buttoncubeface</key>
+		<string>left</string>
+		<key>featuretitle</key>
+		<string>A Cellebration of Chester</string>
+		<key>featuretext</key>
+		<string>This statue was unveiled in 1992 as part of the 900th anniversary celebrations of Chester Cathedral.  Each figure represents the three important aspects of the city and its people reflecting both the personal and corporate life of the city – Protection, Industry and Thanksgiving.  
+
+Written of the monument is:
+
+“A celebration of Chester whose city walls make secure the freedom to work and worship.”</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Clock Tower</string>
+		<key>subtitle</key>
+		<string>Chesters Clock Tower</string>
+		<key>details</key>
+		<string>The Eastgate Clock is a turret clock built above the Eastgate of the ancient walls of Chester. Although the original gate was Roman, the present gate was built in Georgian times to allow coaches through. However, the clock wasn&apos;t added until the Victorian era to celebrate Queen Victoria&apos;s diamond jubilee. The clock is considered a landmark of Chester, and is the second most photographed timepiece in the United Kingdom after Big Ben. Eastgate with its clock is a Grade I listed building.
+	
+The clock consists of a cuboid housing with clock faces on every side. The clock faces use roman numerals and are made of frosted glass, allowing an internal lamp to illuminate the hands at night. The mechanism used an innovative system to house the weights, which powered the clock within the small frame, leading to the popular opinion that a smaller, but less accurate, spring mechanism had been employed instead. The pendulum weighed one Imperial hundredweight (112 lb, 50 kg), in order to protect the pendulum from disturbances due to high winds. The roof of the clock is a green copper ogee roof.
+The clock required weekly winding until 1992, when the original wind-up mechanism was replaced by an electric one, to reduce maintenance costs. JB Joyce of Whitchurch are in charge of maintaining the clock, and until the conversion to electricity, sent somebody to wind the clock every week.
+</string>
+		<key>table icon</key>
+		<string>Clock Tower.png</string>
+		<key>front image</key>
+		<string>Clock Tower.front.jpg</string>
+		<key>right image</key>
+		<string>Clock Tower.right.jpg</string>
+		<key>left image</key>
+		<string>Clock Tower.left.jpg</string>
+		<key>back image</key>
+		<string>Clock Tower.back.jpg</string>
+		<key>up image</key>
+		<string>Clock Tower.top.jpg</string>
+		<key>down image</key>
+		<string>Clock Tower.bottom.jpg</string>
+		<key>latitude</key>
+		<string>53.190845</string>
+		<key>longitude</key>
+		<string>-2.888820</string>
+		<key>labelx</key>
+		<string>0</string>
+		<key>labely</key>
+		<string>0</string>
+		<key>labelcubeface</key>
+		<string>front</string>
+		<key>buttontitle</key>
+		<string>Grosvenor Hotel</string>
+		<key>buttonx</key>
+		<string>120</string>
+		<key>buttony</key>
+		<string>220</string>
+		<key>buttoncubeface</key>
+		<string>right</string>
+		<key>featuretitle</key>
+		<string>Grosvenor Hotel</string>
+		<key>featuretext</key>
+		<string>The Chester Grosvenor and its predecessors, The Golden Talbot and The Royal, have played a leading part in the social, cultural and political life of the city. 
+ 
+From Tudor Inn and political headquarters in bawdy Hanovarian days to a glittering mecca for the Regency and Victorian County set and on through the prosperous Edwardian era, The Chester Grosvenor has become one of Britain&apos;s leading international hotels.
+ 
+Throughout the 20th century, under the Grosvenor family&apos;s careful eye, the hotel has earned a reputation as a proud bastion of tradition and taste. That reputation, and the patronage of the rich and famous it has attracted, has transformed a mere hotel into an institution.</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Cathedral</string>
+		<key>subtitle</key>
+		<string>Chesters Cathedral</string>
+		<key>details</key>
+		<string>Chester Cathedral is the mother church of the Church of England Diocese of Chester, and is located in the city of Chester, Cheshire, England. The cathedral, formerly St Werburgh&apos;s abbey church of a Benedictine monastery, is dedicated to Christ and the Blessed Virgin Mary. Since 1541 it has been the seat of the Bishop of Chester and centre of worship, administration, ceremony and music for the city and diocese.
+The cathedral is a Grade I listed building, and part of a heritage site that also includes the former monastic buildings to the north, also listed Grade I. 
+
+
+The cathedral, typical of English cathedrals in having been modified many times, dates from between 1093 and the early 16th century, although the site itself may have been used for Christian worship since Roman times. All the major styles of English medieval architecture, from Norman to Perpendicular, are represented in the present building.
+
+
+The cathedral and monastic buildings were extensively restored during the 19th century amidst some controversy, and a free-standing bell-tower was added in the 20th century. The buildings are a major tourist attraction in Chester, a city of historic, cultural and architectural importance. In addition to holding services for Christian worship, the cathedral is used as a venue for concerts and exhibitions.</string>
+		<key>table icon</key>
+		<string>Cathedral.png</string>
+		<key>front image</key>
+		<string>Cathedral.front.jpg</string>
+		<key>right image</key>
+		<string>Cathedral.right.jpg</string>
+		<key>left image</key>
+		<string>Cathedral.left.jpg</string>
+		<key>back image</key>
+		<string>Cathedral.back.jpg</string>
+		<key>up image</key>
+		<string>Cathedral.top.jpg</string>
+		<key>down image</key>
+		<string>Cathedral.bottom.jpg</string>
+		<key>latitude</key>
+		<string>53.191564</string>
+		<key>longitude</key>
+		<string>-2.890786</string>
+		<key>labelx</key>
+		<string>180</string>
+		<key>labely</key>
+		<string>0</string>
+		<key>labelcubeface</key>
+		<string>front</string>
+		<key>buttontitle</key>
+		<string>Memorial Cross</string>
+		<key>buttonx</key>
+		<string>210</string>
+		<key>buttony</key>
+		<string>240</string>
+		<key>buttoncubeface</key>
+		<string>left</string>
+		<key>featuretitle</key>
+		<string>Memorial Cross</string>
+		<key>featuretext</key>
+		<string>This monument recognizes and represents the memory and sacrifice of those who died in the two world wars. </string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Roman Amphitheatre</string>
+		<key>subtitle</key>
+		<string>Chesters Roman Amphitheatre</string>
+		<key>details</key>
+		<string>Chester Amphitheatre is a Roman amphitheatre in Chester, Cheshire. The site is managed by English Heritage and it has been designated as a Grade I listed building, and a scheduled monument. The ruins currently exposed are those of a large stone amphitheatre, similar to those found in Continental Europe. Today, only the northern half of the structure is exposed, with the southern half being covered by buildings, some of which are themselves listed. 
+
+The amphitheatre is the largest so far uncovered in Britain, and dates from the 1st century, when the Roman fort of Deva Victrix was founded. The amphitheatre would have been primarily for military training and drill, but would also have been used for cock fighting, bull baiting and combat sports, including classical boxing, wrestling and gladiatorial combat.
+
+Two amphitheaters’ have stood on this site. The first smaller amphitheatre was built soon after AD 80. It had stonewalls and an earth standing bank.  By the early third century the amphitheatre had been rebuilt and enlarged.  The old outer wall was demolished and a new higher one was built. The overall capacity was increased to about 7000.</string>
+		<key>table icon</key>
+		<string>Roman Amphitheatre.png</string>
+		<key>front image</key>
+		<string>Amphitheatre.front.jpg</string>
+		<key>right image</key>
+		<string>Amphitheatre.right.jpg</string>
+		<key>left image</key>
+		<string>Amphitheatre.left.jpg</string>
+		<key>back image</key>
+		<string>Amphitheatre.back.jpg</string>
+		<key>up image</key>
+		<string>Amphitheatre.top.jpg</string>
+		<key>down image</key>
+		<string>Amphitheatre.bottom.jpg</string>
+		<key>latitude</key>
+		<string>53.1892</string>
+		<key>longitude</key>
+		<string>-2.88698</string>
+		<key>labelx</key>
+		<string>300</string>
+		<key>labely</key>
+		<string>300</string>
+		<key>labelcubeface</key>
+		<string>front</string>
+		<key>buttontitle</key>
+		<string>Tethering Stone</string>
+		<key>buttonx</key>
+		<string>200</string>
+		<key>buttony</key>
+		<string>220</string>
+		<key>buttoncubeface</key>
+		<string>right</string>
+		<key>featuretitle</key>
+		<string>Tethering Stone</string>
+		<key>featuretext</key>
+		<string>The Amphitheatre’s tethering stone would have been used to tether a range of creatures and even humans to the center of the theatre to ensure a spectacular fight at the center of the audience.  Having been tied down it would have been difficult for the gladiators to find cover ensuring a battle for the bloodthirsty audience.</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Chester University</string>
+		<key>subtitle</key>
+		<string>University of Chester</string>
+		<key>details</key>
+		<string>It is one of the oldest English higher education establishments of any kind, pre-dating all but Oxford, Cambridge, London and Durham, and its original buildings in the ancient city of Chester were the first in the country to be purpose-built for the professional training of teachers. Education degrees are now just a small part of the 477 course combinations on offer.
+In the 20th Century, the institution steadily expanded its student numbers and the variety and nature of its courses, which range from Applied Theology to Weight Management.
+The University of Chester now has some 16,800 students, drawn from the United Kingdom, Europe and overseas, particularly France, Germany, Spain, Finland, Australia, the United States, India, China, Nigeria, Georgia, Turkey, Kazakhstan, Pakistan, Thailand, Saudia Arabia and Malaysia. 
+As well as undergraduate and postgraduate degrees, a new range of foundation degrees combines conventional university study with learning at work.
+MPhil and PhD qualifications are a growing area of activity, with the University having been granted the powers to award its own research degrees. The emphasis is very much on research that has practical benefits both economically and culturally, and the University provides consultancy support across a variety of areas of expertise.  
+Recent projects have included helping to develop England’s first ‘carbon neutral’ village, discovering a vitamin compound which reduces the risk of heart disease and dementia and translating the Bible into British Sign Language.
+Development of well-respected courses in Health and Social Care, Humanities, Business and Management, Arts and Media, Social Science, Applied Sciences and Education and Children’s Services has further extended the University’s work and connections with industry, commerce and the professions.
+Millions of pounds are being invested in the accommodation and resources to support this work and there is a strong emphasis on making students feel at home.</string>
+		<key>table icon</key>
+		<string>Chester University.png</string>
+		<key>front image</key>
+		<string>University.front.jpg</string>
+		<key>right image</key>
+		<string>University.right.jpg</string>
+		<key>left image</key>
+		<string>University.left.jpg</string>
+		<key>back image</key>
+		<string>University.back.jpg</string>
+		<key>up image</key>
+		<string>University.top.jpg</string>
+		<key>down image</key>
+		<string>University.bottom.jpg</string>
+		<key>latitude</key>
+		<string>53.200017</string>
+		<key>longitude</key>
+		<string>-2.898695</string>
+		<key>labelx</key>
+		<string>200</string>
+		<key>labely</key>
+		<string>300</string>
+		<key>labelcubeface</key>
+		<string>front</string>
+		<key>buttontitle</key>
+		<string>Binks</string>
+		<key>buttonx</key>
+		<string>200</string>
+		<key>buttony</key>
+		<string>200</string>
+		<key>buttoncubeface</key>
+		<string>right</string>
+		<key>featuretitle</key>
+		<string>Binks Building</string>
+		<key>featuretext</key>
+		<string>This is the University of Chester Binks building and is located near the main entrance. It is home to the departments of Computer Science and Modern Languages, with a café for visitors on the first floor opposite the reception.</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Chester Racecourse</string>
+		<key>subtitle</key>
+		<string>Home of the Chester Races</string>
+		<key>details</key>
+		<string>Chester Racecourse, known as the Roodee, is according to official records the oldest racecourse still in use in England. Horse racing at Chester dates back to the early sixteenth century. It is also thought to be the smallest racecourse of significance in England at 1 mile and 1 furlong (1.8 km) long.The 65-acre (260,000 m2) racecourse lies on the banks of the River Dee. The site was once a harbour during the Roman settlement of the city during the Dark Ages, but was closed as the river silted up thus making navigation impossible. Towards the centre of the in field is a raised mound which is decorated by a small cross known as a &quot;rood&quot;. It is from this that the race course derives the name &quot;Roodee&quot;; Roodee is a corruption of &quot;Rood Eye&quot;, meaning &quot;The Island of the Cross&quot;.The Chester Racecourse site was home to the famous and bloody Goteddsday football match. The game was very violent and, in 1533, banned by the city, to be replaced in 1539 by horse racing. The first recorded race was held on 9 February 1539 (although other sources list this as 10 January 1811with the consent of the Mayor Henry Gee, whose name led to the use of the term &quot;gee-gee&quot; for horses Races originally took place on Goteddsday (Shrove Tuesday) until 1609, and thereafter on St George&apos;s Day, both major festivals during the medieval period. Victors were awarded the &quot;Chester Bells&quot;, a set of decorative bells for decorating the horse&apos;s bridle, and from 1744 the &quot;Grosvenor Gold Cup&quot;, a small tumbler made from solid gold (later silver). In 1745, the meeting became a four day one, with one race on each day. In 1766 a May Festival was introduced, and in 1824, the Tradesmen&apos;s Cup Race (the predecessor to the Chester Cup) was also introduced.The racecourse was at that point still just an open field, with the first grandstand finished in 1817 and the first admittance fee not being taken until 1897. The stand was rebuilt in 1899-1900, and was replaced after being destroyed by a fire set by an arsonist in 1985.The racecourse&apos;s position in the city makes race meetings at Chester very popular as it is only a very short stroll to all the hotels, bars, shopping and restaurants. The racecourse itself is just over 1-mile (1.6 km) long, flat and raced anti-clockwise or left-handed. The main characteristic of the course is the very short straight (239 yards). As such, long-strided horses, which perform better on straights, are at a distinct disadvantage.</string>
+		<key>table icon</key>
+		<string>Chester Racecourse.png</string>
+		<key>front image</key>
+		<string>RaceCourse.front.jpg</string>
+		<key>right image</key>
+		<string>RaceCourse.right.jpg</string>
+		<key>left image</key>
+		<string>RaceCourse.left.jpg</string>
+		<key>back image</key>
+		<string>RaceCourse.back.jpg</string>
+		<key>up image</key>
+		<string>RaceCourse.top.jpg</string>
+		<key>down image</key>
+		<string>RaceCourse.bottom.jpg</string>
+		<key>latitude</key>
+		<string>53.185516</string>
+		<key>longitude</key>
+		<string>-2.895155</string>
+		<key>labelx</key>
+		<string>200</string>
+		<key>labely</key>
+		<string>300</string>
+		<key>labelcubeface</key>
+		<string>front</string>
+		<key>buttontitle</key>
+		<string>Roman Stone</string>
+		<key>buttonx</key>
+		<string>200</string>
+		<key>buttony</key>
+		<string>200</string>
+		<key>buttoncubeface</key>
+		<string>left</string>
+		<key>featuretitle</key>
+		<string>Roman Stone</string>
+		<key>featuretext</key>
+		<string>Towards the centre of the in field is a raised mound which is decorated by a small cross known as a &quot;rood&quot;. It is from this that the race course derives the name &quot;Roodee&quot;; Roodee is a corruption of &quot;Rood Eye&quot;, meaning &quot;The Island of the Cross&quot;.According to legend the cross marks the burial site of a statue of the Virgin Mary sentenced to hang after causing the death of Lady Trawst, the wife of the Governor of Hawarden. The legend states that she had gone to church to pray for rain but when her prayers were answered by a tremendous thunderstorm the statue was loosened and fell, killing her. As a holy object, hanging or burning the statue would be sacrilege so the statue was left by the banks of the river and the tide carried it down to Chester. The statue was found guilty by a jury of 12 men. If the legend is true, then this is the first recorded case of a jury being used in a court.</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Crossroads</string>
+		<key>subtitle</key>
+		<string>The Crossroads</string>
+		<key>details</key>
+		<string>Chester Cross is a junction of streets at the centre of the city of Chester, Cheshire, England.The streets meeting at the junction are Watergate Street, Eastgate Street, Bridge Street and Northgate Street. The junction consists of a staggered crossroads, with Watergate Street in continuity with Eastgate Street, and Bridge Street joining the junction to the west of Northgate Street. Watergate Street, Eastgate Street, Bridge Street were the main roads in Chester when it was a Roman fortress. To the north of the point where Bridge Street met the other streets was the Roman principia (headquarters building). It is thought that Northgate Street was driven through the ruins of the Roman buildings in the 10th century.The centrepiece of Chester Cross is the Grade II listed building Chester High Cross, a medieval cross which was damaged in the Civil War, then removed elsewhere, and reinstated in its original position in 1975.Immediately to the north of Chester Cross is St Peter&apos;s Church, a Grade I listed building. At the southeast corner of the junction is 1 Bridge Street, a Grade II* listed building. Today Chester Cross is a popular meeting point. During the summer months Chester&apos;s town crier makes a midday proclamation from the steps of the High Cross.</string>
+		<key>table icon</key>
+		<string>Crossroads.png</string>
+		<key>front image</key>
+		<string>Cross.front.jpg</string>
+		<key>right image</key>
+		<string>Cross.right.jpg</string>
+		<key>left image</key>
+		<string>Cross.left.jpg</string>
+		<key>back image</key>
+		<string>Cross.back.jpg</string>
+		<key>up image</key>
+		<string>Cross.top.jpg</string>
+		<key>down image</key>
+		<string>Cross.bottom.jpg</string>
+		<key>latitude</key>
+		<string>53.190252</string>
+		<key>longitude</key>
+		<string>-2.891617</string>
+		<key>labelx</key>
+		<string>200</string>
+		<key>labely</key>
+		<string>10</string>
+		<key>labelcubeface</key>
+		<string>front</string>
+		<key>buttontitle</key>
+		<string>Cross</string>
+		<key>buttonx</key>
+		<string>300</string>
+		<key>buttony</key>
+		<string>300</string>
+		<key>buttoncubeface</key>
+		<string>left</string>
+		<key>featuretitle</key>
+		<string>Crossroads</string>
+		<key>featuretext</key>
+		<string>The centrepiece of Chester Cross is the Grade II listed building Chester High Cross, a medieval cross which was damaged in the Civil War, then removed elsewhere, and reinstated in its original position in 1975.</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Riverside Bridge</string>
+		<key>subtitle</key>
+		<string>Chesters Riverside</string>
+		<key>details</key>
+		<string>Queen&apos;s Park Suspension Bridge. This pedestrian bridge was opened on 18 April 1923, replacing an earlier Victorian bridge built in 1852. This suspension bridge spans The River Dee and takes you to the south bank where you will find a good walking path that leads to Chester Meadows. It replaces an original bridge that was built in 1851, and is a key walk path to accessing the city from the opposite side of the river. It is sited at the groves, a riverside promenade which is extremely popular on sunny days. River ferries can be purchased and pedlo&apos;s loaned for a small deposit a little further down the promenade.</string>
+		<key>table icon</key>
+		<string>Riverside Bridge.png</string>
+		<key>front image</key>
+		<string>RiversideBridge.front.jpg</string>
+		<key>right image</key>
+		<string>RiversideBridge.right.jpg</string>
+		<key>left image</key>
+		<string>RiversideBridge.left.jpg</string>
+		<key>back image</key>
+		<string>RiversideBridge.back.jpg</string>
+		<key>up image</key>
+		<string>RiversideBridge.top.jpg</string>
+		<key>down image</key>
+		<string>RiversideBridge.bottom.jpg</string>
+		<key>latitude</key>
+		<string>53.188174</string>
+		<key>longitude</key>
+		<string>-2.884877</string>
+		<key>labelx</key>
+		<string>200</string>
+		<key>labely</key>
+		<string>300</string>
+		<key>labelcubeface</key>
+		<string>front</string>
+		<key>buttontitle</key>
+		<string>Riverside Bridge</string>
+		<key>buttonx</key>
+		<string>200</string>
+		<key>buttony</key>
+		<string>200</string>
+		<key>buttoncubeface</key>
+		<string>back</string>
+		<key>featuretitle</key>
+		<string>Riverside Bridge</string>
+		<key>featuretext</key>
+		<string>Queen&apos;s Park Suspension Bridge. This pedestrian bridge was opened on 18 April 1923, replacing an earlier Victorian bridge built in 1852. This suspension bridge spans The River Dee and takes you to the south bank where you will find a good walking path that leads to Chester Meadows. </string>
+	</dict>
+</array>
+</plist>
